@@ -1,0 +1,11 @@
+---- Line_Offset Matches (10 in 3 files) ----
+conf_EPD.h (src):      #define Line_Offset(index) 64
+conf_EPD.h (src):      #define Line_Offset(index) COG_parameters[index].horizontal_size;
+EPD_G1_Aurora_Mb.c (src\pervasive_displays_small_epd\cog_fpl\g1_aurora_mb):            image_data_address+=Line_Offset(cur_EPD_type_index);
+EPD_G1_Aurora_Mb.c (src\pervasive_displays_small_epd\cog_fpl\g1_aurora_mb):            image_data_address+=Line_Offset(cur_EPD_type_index);
+EPD_G1_Aurora_Mb.c (src\pervasive_displays_small_epd\cog_fpl\g1_aurora_mb):            if(_On_EPD_read_flash!=NULL) address_offset += Line_Offset(cur_EPD_type_index);
+EPD_G1_Aurora_Mb.c (src\pervasive_displays_small_epd\cog_fpl\g1_aurora_mb):            if(_On_EPD_read_flash!=NULL) address_offset += Line_Offset(cur_EPD_type_index);
+EPD_G2_Aurora_Mb.c (src\pervasive_displays_small_epd\cog_fpl\g2_aurora_mb):            image_data_address+=Line_Offset(cur_EPD_type_index);
+EPD_G2_Aurora_Mb.c (src\pervasive_displays_small_epd\cog_fpl\g2_aurora_mb):            image_data_address+=Line_Offset(cur_EPD_type_index);
+EPD_G2_Aurora_Mb.c (src\pervasive_displays_small_epd\cog_fpl\g2_aurora_mb):		if(_On_EPD_read_flash!=NULL) address_offset += Line_Offset(cur_EPD_type_index);
+EPD_G2_Aurora_Mb.c (src\pervasive_displays_small_epd\cog_fpl\g2_aurora_mb):			if(_On_EPD_read_flash!=NULL) address_offset += Line_Offset(cur_EPD_type_index);
