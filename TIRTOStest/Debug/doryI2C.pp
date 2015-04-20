@@ -1,6 +1,8 @@
 # FIXED
 
 doryI2C.obj: ../doryI2C.c
+doryI2C.obj: ../Board.h
+doryI2C.obj: ../MSP_EXP430F5529LP.h
 doryI2C.obj: ../doryI2C.h
 doryI2C.obj: /home/vagrant/ti/tirtos_msp43x_2_12_00_24/packages/ti/drivers/I2C.h
 doryI2C.obj: /home/vagrant/ti/ccsv6/tools/compiler/ti-cgt-msp430_4.4.3/include/stdint.h
@@ -88,6 +90,8 @@ doryI2C.obj: /home/vagrant/ti/xdctools_3_31_00_24_core/packages/xdc/runtime/pack
 doryI2C.obj: /home/vagrant/ti/xdctools_3_31_00_24_core/packages/xdc/runtime/package/System_Module_GateProxy.h
 
 ../doryI2C.c: 
+../Board.h: 
+../MSP_EXP430F5529LP.h: 
 ../doryI2C.h: 
 /home/vagrant/ti/tirtos_msp43x_2_12_00_24/packages/ti/drivers/I2C.h: 
 /home/vagrant/ti/ccsv6/tools/compiler/ti-cgt-msp430_4.4.3/include/stdint.h: 

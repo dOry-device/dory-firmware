@@ -2399,12 +2399,12 @@
   <field name="boardName">msp430</field>
   <field name="boardFamily">null</field>
   <field name="boardRevision">null</field>
-</struct></field><field name='attrs'>xdc.services.intern.xsr.Value$Obj@1189e42::(xdc.platform.ICpuDataSheet.Instance)ti.catalog.msp430.MSP430.Instance#0</field><field name='memoryMap'></field></instance>
+</struct></field><field name='attrs'>xdc.services.intern.xsr.Value$Obj@1005629::(xdc.platform.ICpuDataSheet.Instance)ti.catalog.msp430.MSP430.Instance#0</field><field name='memoryMap'></field></instance>
             </feature>
             <feature name="platformName" type="string" value="ti.platforms.msp430%3AMSP430F5529"/>
             <feature name="platform" type="xdc.platform.IPlatform.Instance"><instance id='ti.platforms.msp430.Platform.Instance#0' ><field name='externalMemoryMap'></field><field name='customMemoryMap'></field><field name='renameMap'></field><field name='dataMemory'>null</field><field name='codeMemory'>null</field><field name='stackMemory'>null</field><field name='sectMap'></field><field name='peripherals'></field></instance>
             </feature>
-            <feature name="global" type="object"><map id='xdc.cfg.Program/global'  length='3'><entry key='heartBeatTask'>xdc.services.intern.xsr.Value$Obj@16fdd71::ti.sysbios.knl.Task.Instance#0</entry><entry key='greenLed'>xdc.services.intern.xsr.Value$Obj@1333f12::ti.sysbios.knl.Task.Instance#1</entry><entry key='TI_DRIVERS_WIFI_INCLUDED'>false</entry></map>
+            <feature name="global" type="object"><map id='xdc.cfg.Program/global'  length='3'><entry key='heartBeatTask'>xdc.services.intern.xsr.Value$Obj@718764::ti.sysbios.knl.Task.Instance#0</entry><entry key='greenLed'>xdc.services.intern.xsr.Value$Obj@16fdd71::ti.sysbios.knl.Task.Instance#1</entry><entry key='TI_DRIVERS_WIFI_INCLUDED'>false</entry></map>
             </feature>
             <feature name="symbol" type="object"><map id='xdc.cfg.Program/symbol'  length='2'><entry key='xdc_runtime_Startup__EXECFXN__C'>0x1</entry><entry key='xdc_runtime_Startup__RESETFXN__C'>0x1</entry></map>
             </feature>
@@ -2416,7 +2416,7 @@
         <module name="xdc.cfg.SourceDir"
                 used="true"
                 uses="">
-            <feature name="outputDir" type="string" value="/home/vagrant/Desktop/dory/TIRTOStest/src"/>
+            <feature name="outputDir" type="string" value="/home/vagrant/dory-firmware/TIRTOStest/src"/>
             <feature name="toBuildDir" type="string" value=".."/>
             <feature name="makefileName" type="string" value="makefile.libs"/>
             <feature name="verbose" type="number" value="2"/>
@@ -6656,7 +6656,7 @@
                 uses="">
         </module>
     </package>
-    <package name="configPkg" version="" repository="/home/vagrant/Desktop/dory/TIRTOStest/Debug/">
+    <package name="configPkg" version="" repository="/home/vagrant/dory-firmware/TIRTOStest/Debug/">
     </package>
     <package name="xdc.services.io" version="1,0,0,0" repository="/home/vagrant/ti/xdctools_3_31_00_24_core/packages/">
         <module name="xdc.services.io.File"

@@ -4,7 +4,7 @@
  *  Created on: Apr 20, 2015
  *      Author: traffael
  */
-//#include "Board.h"
+#include "Board.h"
 #include "doryI2C.h"
 
 
@@ -16,7 +16,7 @@ void doryI2C_init() {
 	//TODO: change to callback
 	params.transferCallbackFxn = NULL;
 
-	//Board_initI2C();
+	Board_initI2C();
 
 	handle = I2C_open(i2cConfigIndexValueTest, &params);
 
@@ -34,11 +34,10 @@ void doryI2C_init() {
 
 
 void doryI2C_getTemperature() {
-	System_printf("slave addr %x",i2cTransaction.slaveAddress);
-	System_flush();
-	// = 0x48;
-	//i2cTransaction.writeBuf = NULL;
-	i2cTransaction.writeCount = 0;
+	i2cTransaction.slaveAddress=0x48;
+	writeBuffer[0]=0; //read temperature command
+	i2cTransaction.writeBuf = writeBuffer;
+	i2cTransaction.writeCount = 1;
 	i2cTransaction.readBuf = readBuffer;
 	i2cTransaction.readCount=1;
 

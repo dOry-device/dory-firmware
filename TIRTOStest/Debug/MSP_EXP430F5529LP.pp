@@ -9,7 +9,7 @@ MSP_EXP430F5529LP.obj: /home/vagrant/ti/tirtos_msp43x_2_12_00_24/products/bios_6
 MSP_EXP430F5529LP.obj: /home/vagrant/ti/tirtos_msp43x_2_12_00_24/products/bios_6_41_03_51/packages/ti/targets/std.h
 MSP_EXP430F5529LP.obj: /home/vagrant/ti/ccsv6/tools/compiler/ti-cgt-msp430_4.4.3/include/stdint.h
 MSP_EXP430F5529LP.obj: /home/vagrant/ti/xdctools_3_31_00_24_core/packages/xdc/cfg/global.h
-MSP_EXP430F5529LP.obj: /home/vagrant/Desktop/dory/TIRTOStest/Debug/configPkg/package/cfg/empty_min_pe430X.h
+MSP_EXP430F5529LP.obj: /home/vagrant/dory-firmware/TIRTOStest/Debug/configPkg/package/cfg/empty_min_pe430X.h
 MSP_EXP430F5529LP.obj: /home/vagrant/ti/tirtos_msp43x_2_12_00_24/products/bios_6_41_03_51/packages/ti/sysbios/knl/Task.h
 MSP_EXP430F5529LP.obj: /home/vagrant/ti/xdctools_3_31_00_24_core/packages/xdc/runtime/xdc.h
 MSP_EXP430F5529LP.obj: /home/vagrant/ti/xdctools_3_31_00_24_core/packages/xdc/runtime/Types.h
@@ -254,7 +254,7 @@ MSP_EXP430F5529LP.obj: /home/vagrant/ti/tirtos_msp43x_2_12_00_24/products/bios_6
 /home/vagrant/ti/tirtos_msp43x_2_12_00_24/products/bios_6_41_03_51/packages/ti/targets/std.h: 
 /home/vagrant/ti/ccsv6/tools/compiler/ti-cgt-msp430_4.4.3/include/stdint.h: 
 /home/vagrant/ti/xdctools_3_31_00_24_core/packages/xdc/cfg/global.h: 
-/home/vagrant/Desktop/dory/TIRTOStest/Debug/configPkg/package/cfg/empty_min_pe430X.h: 
+/home/vagrant/dory-firmware/TIRTOStest/Debug/configPkg/package/cfg/empty_min_pe430X.h: 
 /home/vagrant/ti/tirtos_msp43x_2_12_00_24/products/bios_6_41_03_51/packages/ti/sysbios/knl/Task.h: 
 /home/vagrant/ti/xdctools_3_31_00_24_core/packages/xdc/runtime/xdc.h: 
 /home/vagrant/ti/xdctools_3_31_00_24_core/packages/xdc/runtime/Types.h: 

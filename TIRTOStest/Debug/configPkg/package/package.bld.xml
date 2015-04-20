@@ -7,7 +7,7 @@
         <srcFile name="package/cfg/empty_min_pe430X.c"/>
     </sources>
     <configscripts>
-        <srcFile name="/home/vagrant/Desktop/dory/TIRTOStest/empty_min.cfg"/>
+        <srcFile name="/home/vagrant/dory-firmware/TIRTOStest/empty_min.cfg"/>
     </configscripts>
     <makefiles>
         <srcFile name="package.mak" src="package.bld"/>
@@ -44,7 +44,7 @@
         isPartial="false"
         xCfgScript="package/cfg/empty_min_pe430X.cfg"
         xCfgPrefix="package/cfg/empty_min_pe430X"
-        cfgScript="/home/vagrant/Desktop/dory/TIRTOStest/empty_min.cfg"
+        cfgScript="/home/vagrant/dory-firmware/TIRTOStest/empty_min.cfg"
         cfgArgs="null"
         />
     </configurations>
@@ -56,7 +56,7 @@
         profile="release"
         xCfgScript="package/cfg/empty_min_pe430X.cfg"
         xCfgPrefix="package/cfg/empty_min_pe430X"
-        cfgScript="/home/vagrant/Desktop/dory/TIRTOStest/empty_min.cfg"
+        cfgScript="/home/vagrant/dory-firmware/TIRTOStest/empty_min.cfg"
         cfgArgs="null"
         />
     </executables>

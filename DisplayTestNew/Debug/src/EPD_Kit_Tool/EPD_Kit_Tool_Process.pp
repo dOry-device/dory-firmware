@@ -1,7 +1,7 @@
 # FIXED
 
 src/EPD_Kit_Tool/EPD_Kit_Tool_Process.obj: ../src/EPD_Kit_Tool/EPD_Kit_Tool_Process.c
-src/EPD_Kit_Tool/EPD_Kit_Tool_Process.obj: /home/vagrant/Desktop/dory/DisplayTestNew/src/conf_EPD.h
+src/EPD_Kit_Tool/EPD_Kit_Tool_Process.obj: /home/vagrant/dory-firmware/DisplayTestNew/src/conf_EPD.h
 src/EPD_Kit_Tool/EPD_Kit_Tool_Process.obj: /home/vagrant/ti/ccsv6/tools/compiler/ti-cgt-msp430_4.4.3/include/stdint.h
 src/EPD_Kit_Tool/EPD_Kit_Tool_Process.obj: /home/vagrant/ti/ccsv6/tools/compiler/ti-cgt-msp430_4.4.3/include/string.h
 src/EPD_Kit_Tool/EPD_Kit_Tool_Process.obj: /home/vagrant/ti/ccsv6/tools/compiler/ti-cgt-msp430_4.4.3/include/linkage.h
@@ -17,44 +17,44 @@ src/EPD_Kit_Tool/EPD_Kit_Tool_Process.obj: /home/vagrant/ti/ccsv6/ccs_base/msp43
 src/EPD_Kit_Tool/EPD_Kit_Tool_Process.obj: /home/vagrant/ti/ccsv6/ccs_base/msp430/include/in430.h
 src/EPD_Kit_Tool/EPD_Kit_Tool_Process.obj: /home/vagrant/ti/ccsv6/tools/compiler/ti-cgt-msp430_4.4.3/include/intrinsics.h
 src/EPD_Kit_Tool/EPD_Kit_Tool_Process.obj: /home/vagrant/ti/ccsv6/tools/compiler/ti-cgt-msp430_4.4.3/include/intrinsics_legacy_undefs.h
-src/EPD_Kit_Tool/EPD_Kit_Tool_Process.obj: /home/vagrant/Desktop/dory/DisplayTestNew/src/Pervasive_Displays_small_EPD/EPD_hardware_driver.h
-src/EPD_Kit_Tool/EPD_Kit_Tool_Process.obj: /home/vagrant/Desktop/dory/DisplayTestNew/src/conf_EPD.h
+src/EPD_Kit_Tool/EPD_Kit_Tool_Process.obj: /home/vagrant/dory-firmware/DisplayTestNew/src/Pervasive_Displays_small_EPD/EPD_hardware_driver.h
+src/EPD_Kit_Tool/EPD_Kit_Tool_Process.obj: /home/vagrant/dory-firmware/DisplayTestNew/src/conf_EPD.h
 src/EPD_Kit_Tool/EPD_Kit_Tool_Process.obj: /home/vagrant/ti/ccsv6/tools/compiler/ti-cgt-msp430_4.4.3/include/string.h
 src/EPD_Kit_Tool/EPD_Kit_Tool_Process.obj: /home/vagrant/ti/ccsv6/tools/compiler/ti-cgt-msp430_4.4.3/include/stdlib.h
 src/EPD_Kit_Tool/EPD_Kit_Tool_Process.obj: /home/vagrant/ti/ccsv6/tools/compiler/ti-cgt-msp430_4.4.3/include/math.h
-src/EPD_Kit_Tool/EPD_Kit_Tool_Process.obj: /home/vagrant/Desktop/dory/DisplayTestNew/src/Pervasive_Displays_small_EPD/COG_FPL.h
-src/EPD_Kit_Tool/EPD_Kit_Tool_Process.obj: /home/vagrant/Desktop/dory/DisplayTestNew/src/conf_EPD.h
+src/EPD_Kit_Tool/EPD_Kit_Tool_Process.obj: /home/vagrant/dory-firmware/DisplayTestNew/src/Pervasive_Displays_small_EPD/COG_FPL.h
+src/EPD_Kit_Tool/EPD_Kit_Tool_Process.obj: /home/vagrant/dory-firmware/DisplayTestNew/src/conf_EPD.h
 src/EPD_Kit_Tool/EPD_Kit_Tool_Process.obj: /home/vagrant/ti/ccsv6/tools/compiler/ti-cgt-msp430_4.4.3/include/string.h
 src/EPD_Kit_Tool/EPD_Kit_Tool_Process.obj: /home/vagrant/ti/ccsv6/tools/compiler/ti-cgt-msp430_4.4.3/include/stdlib.h
 src/EPD_Kit_Tool/EPD_Kit_Tool_Process.obj: /home/vagrant/ti/ccsv6/tools/compiler/ti-cgt-msp430_4.4.3/include/math.h
-src/EPD_Kit_Tool/EPD_Kit_Tool_Process.obj: /home/vagrant/Desktop/dory/DisplayTestNew/src/Pervasive_Displays_small_EPD/EPD_interface.h
-src/EPD_Kit_Tool/EPD_Kit_Tool_Process.obj: /home/vagrant/Desktop/dory/DisplayTestNew/src/conf_EPD.h
+src/EPD_Kit_Tool/EPD_Kit_Tool_Process.obj: /home/vagrant/dory-firmware/DisplayTestNew/src/Pervasive_Displays_small_EPD/EPD_interface.h
+src/EPD_Kit_Tool/EPD_Kit_Tool_Process.obj: /home/vagrant/dory-firmware/DisplayTestNew/src/conf_EPD.h
 src/EPD_Kit_Tool/EPD_Kit_Tool_Process.obj: /home/vagrant/ti/ccsv6/tools/compiler/ti-cgt-msp430_4.4.3/include/string.h
 src/EPD_Kit_Tool/EPD_Kit_Tool_Process.obj: /home/vagrant/ti/ccsv6/tools/compiler/ti-cgt-msp430_4.4.3/include/stdlib.h
 src/EPD_Kit_Tool/EPD_Kit_Tool_Process.obj: /home/vagrant/ti/ccsv6/tools/compiler/ti-cgt-msp430_4.4.3/include/math.h
-src/EPD_Kit_Tool/EPD_Kit_Tool_Process.obj: /home/vagrant/Desktop/dory/DisplayTestNew/src/Pervasive_Displays_small_EPD/EPD_partial_interface.h
-src/EPD_Kit_Tool/EPD_Kit_Tool_Process.obj: /home/vagrant/Desktop/dory/DisplayTestNew/src/conf_EPD.h
+src/EPD_Kit_Tool/EPD_Kit_Tool_Process.obj: /home/vagrant/dory-firmware/DisplayTestNew/src/Pervasive_Displays_small_EPD/EPD_partial_interface.h
+src/EPD_Kit_Tool/EPD_Kit_Tool_Process.obj: /home/vagrant/dory-firmware/DisplayTestNew/src/conf_EPD.h
 src/EPD_Kit_Tool/EPD_Kit_Tool_Process.obj: /home/vagrant/ti/ccsv6/tools/compiler/ti-cgt-msp430_4.4.3/include/string.h
 src/EPD_Kit_Tool/EPD_Kit_Tool_Process.obj: /home/vagrant/ti/ccsv6/tools/compiler/ti-cgt-msp430_4.4.3/include/stdlib.h
 src/EPD_Kit_Tool/EPD_Kit_Tool_Process.obj: /home/vagrant/ti/ccsv6/tools/compiler/ti-cgt-msp430_4.4.3/include/math.h
 src/EPD_Kit_Tool/EPD_Kit_Tool_Process.obj: ../src/EPD_Kit_Tool/EPD_Kit_Tool_Process.h
-src/EPD_Kit_Tool/EPD_Kit_Tool_Process.obj: /home/vagrant/Desktop/dory/DisplayTestNew/src/conf_EPD.h
+src/EPD_Kit_Tool/EPD_Kit_Tool_Process.obj: /home/vagrant/dory-firmware/DisplayTestNew/src/conf_EPD.h
 src/EPD_Kit_Tool/EPD_Kit_Tool_Process.obj: /home/vagrant/ti/ccsv6/tools/compiler/ti-cgt-msp430_4.4.3/include/string.h
 src/EPD_Kit_Tool/EPD_Kit_Tool_Process.obj: /home/vagrant/ti/ccsv6/tools/compiler/ti-cgt-msp430_4.4.3/include/stdlib.h
 src/EPD_Kit_Tool/EPD_Kit_Tool_Process.obj: /home/vagrant/ti/ccsv6/tools/compiler/ti-cgt-msp430_4.4.3/include/math.h
-src/EPD_Kit_Tool/EPD_Kit_Tool_Process.obj: /home/vagrant/Desktop/dory/DisplayTestNew/src/EPD_Kit_Tool/Drivers/EPD_LED.h
-src/EPD_Kit_Tool/EPD_Kit_Tool_Process.obj: /home/vagrant/Desktop/dory/DisplayTestNew/src/conf_EPD.h
+src/EPD_Kit_Tool/EPD_Kit_Tool_Process.obj: /home/vagrant/dory-firmware/DisplayTestNew/src/EPD_Kit_Tool/Drivers/EPD_LED.h
+src/EPD_Kit_Tool/EPD_Kit_Tool_Process.obj: /home/vagrant/dory-firmware/DisplayTestNew/src/conf_EPD.h
 src/EPD_Kit_Tool/EPD_Kit_Tool_Process.obj: /home/vagrant/ti/ccsv6/tools/compiler/ti-cgt-msp430_4.4.3/include/string.h
 src/EPD_Kit_Tool/EPD_Kit_Tool_Process.obj: /home/vagrant/ti/ccsv6/tools/compiler/ti-cgt-msp430_4.4.3/include/stdlib.h
 src/EPD_Kit_Tool/EPD_Kit_Tool_Process.obj: /home/vagrant/ti/ccsv6/tools/compiler/ti-cgt-msp430_4.4.3/include/math.h
 src/EPD_Kit_Tool/EPD_Kit_Tool_Process.obj: ../src/EPD_Kit_Tool/Char.h
 src/EPD_Kit_Tool/EPD_Kit_Tool_Process.obj: ../src/EPD_Kit_Tool/Mem_Flash.h
 src/EPD_Kit_Tool/EPD_Kit_Tool_Process.obj: ../src/EPD_Kit_Tool/EPD_Kit_Tool_Process.h
-src/EPD_Kit_Tool/EPD_Kit_Tool_Process.obj: /home/vagrant/Desktop/dory/DisplayTestNew/src/EPD_Kit_Tool/Drivers/Uart_Driver.h
+src/EPD_Kit_Tool/EPD_Kit_Tool_Process.obj: /home/vagrant/dory-firmware/DisplayTestNew/src/EPD_Kit_Tool/Drivers/Uart_Driver.h
 src/EPD_Kit_Tool/EPD_Kit_Tool_Process.obj: ../src/EPD_Kit_Tool/Uart_Controller.h
 
 ../src/EPD_Kit_Tool/EPD_Kit_Tool_Process.c: 
-/home/vagrant/Desktop/dory/DisplayTestNew/src/conf_EPD.h: 
+/home/vagrant/dory-firmware/DisplayTestNew/src/conf_EPD.h: 
 /home/vagrant/ti/ccsv6/tools/compiler/ti-cgt-msp430_4.4.3/include/stdint.h: 
 /home/vagrant/ti/ccsv6/tools/compiler/ti-cgt-msp430_4.4.3/include/string.h: 
 /home/vagrant/ti/ccsv6/tools/compiler/ti-cgt-msp430_4.4.3/include/linkage.h: 
@@ -70,38 +70,38 @@ src/EPD_Kit_Tool/EPD_Kit_Tool_Process.obj: ../src/EPD_Kit_Tool/Uart_Controller.h
 /home/vagrant/ti/ccsv6/ccs_base/msp430/include/in430.h: 
 /home/vagrant/ti/ccsv6/tools/compiler/ti-cgt-msp430_4.4.3/include/intrinsics.h: 
 /home/vagrant/ti/ccsv6/tools/compiler/ti-cgt-msp430_4.4.3/include/intrinsics_legacy_undefs.h: 
-/home/vagrant/Desktop/dory/DisplayTestNew/src/Pervasive_Displays_small_EPD/EPD_hardware_driver.h: 
-/home/vagrant/Desktop/dory/DisplayTestNew/src/conf_EPD.h: 
+/home/vagrant/dory-firmware/DisplayTestNew/src/Pervasive_Displays_small_EPD/EPD_hardware_driver.h: 
+/home/vagrant/dory-firmware/DisplayTestNew/src/conf_EPD.h: 
 /home/vagrant/ti/ccsv6/tools/compiler/ti-cgt-msp430_4.4.3/include/string.h: 
 /home/vagrant/ti/ccsv6/tools/compiler/ti-cgt-msp430_4.4.3/include/stdlib.h: 
 /home/vagrant/ti/ccsv6/tools/compiler/ti-cgt-msp430_4.4.3/include/math.h: 
-/home/vagrant/Desktop/dory/DisplayTestNew/src/Pervasive_Displays_small_EPD/COG_FPL.h: 
-/home/vagrant/Desktop/dory/DisplayTestNew/src/conf_EPD.h: 
+/home/vagrant/dory-firmware/DisplayTestNew/src/Pervasive_Displays_small_EPD/COG_FPL.h: 
+/home/vagrant/dory-firmware/DisplayTestNew/src/conf_EPD.h: 
 /home/vagrant/ti/ccsv6/tools/compiler/ti-cgt-msp430_4.4.3/include/string.h: 
 /home/vagrant/ti/ccsv6/tools/compiler/ti-cgt-msp430_4.4.3/include/stdlib.h: 
 /home/vagrant/ti/ccsv6/tools/compiler/ti-cgt-msp430_4.4.3/include/math.h: 
-/home/vagrant/Desktop/dory/DisplayTestNew/src/Pervasive_Displays_small_EPD/EPD_interface.h: 
-/home/vagrant/Desktop/dory/DisplayTestNew/src/conf_EPD.h: 
+/home/vagrant/dory-firmware/DisplayTestNew/src/Pervasive_Displays_small_EPD/EPD_interface.h: 
+/home/vagrant/dory-firmware/DisplayTestNew/src/conf_EPD.h: 
 /home/vagrant/ti/ccsv6/tools/compiler/ti-cgt-msp430_4.4.3/include/string.h: 
 /home/vagrant/ti/ccsv6/tools/compiler/ti-cgt-msp430_4.4.3/include/stdlib.h: 
 /home/vagrant/ti/ccsv6/tools/compiler/ti-cgt-msp430_4.4.3/include/math.h: 
-/home/vagrant/Desktop/dory/DisplayTestNew/src/Pervasive_Displays_small_EPD/EPD_partial_interface.h: 
-/home/vagrant/Desktop/dory/DisplayTestNew/src/conf_EPD.h: 
+/home/vagrant/dory-firmware/DisplayTestNew/src/Pervasive_Displays_small_EPD/EPD_partial_interface.h: 
+/home/vagrant/dory-firmware/DisplayTestNew/src/conf_EPD.h: 
 /home/vagrant/ti/ccsv6/tools/compiler/ti-cgt-msp430_4.4.3/include/string.h: 
 /home/vagrant/ti/ccsv6/tools/compiler/ti-cgt-msp430_4.4.3/include/stdlib.h: 
 /home/vagrant/ti/ccsv6/tools/compiler/ti-cgt-msp430_4.4.3/include/math.h: 
 ../src/EPD_Kit_Tool/EPD_Kit_Tool_Process.h: 
-/home/vagrant/Desktop/dory/DisplayTestNew/src/conf_EPD.h: 
+/home/vagrant/dory-firmware/DisplayTestNew/src/conf_EPD.h: 
 /home/vagrant/ti/ccsv6/tools/compiler/ti-cgt-msp430_4.4.3/include/string.h: 
 /home/vagrant/ti/ccsv6/tools/compiler/ti-cgt-msp430_4.4.3/include/stdlib.h: 
 /home/vagrant/ti/ccsv6/tools/compiler/ti-cgt-msp430_4.4.3/include/math.h: 
-/home/vagrant/Desktop/dory/DisplayTestNew/src/EPD_Kit_Tool/Drivers/EPD_LED.h: 
-/home/vagrant/Desktop/dory/DisplayTestNew/src/conf_EPD.h: 
+/home/vagrant/dory-firmware/DisplayTestNew/src/EPD_Kit_Tool/Drivers/EPD_LED.h: 
+/home/vagrant/dory-firmware/DisplayTestNew/src/conf_EPD.h: 
 /home/vagrant/ti/ccsv6/tools/compiler/ti-cgt-msp430_4.4.3/include/string.h: 
 /home/vagrant/ti/ccsv6/tools/compiler/ti-cgt-msp430_4.4.3/include/stdlib.h: 
 /home/vagrant/ti/ccsv6/tools/compiler/ti-cgt-msp430_4.4.3/include/math.h: 
 ../src/EPD_Kit_Tool/Char.h: 
 ../src/EPD_Kit_Tool/Mem_Flash.h: 
 ../src/EPD_Kit_Tool/EPD_Kit_Tool_Process.h: 
-/home/vagrant/Desktop/dory/DisplayTestNew/src/EPD_Kit_Tool/Drivers/Uart_Driver.h: 
+/home/vagrant/dory-firmware/DisplayTestNew/src/EPD_Kit_Tool/Drivers/Uart_Driver.h: 
 ../src/EPD_Kit_Tool/Uart_Controller.h: 
