@@ -11,7 +11,7 @@ var makeAssembly = false;
 var Executable = xdc.module('xdc.bld.Executable');
 
 var exeOpts = new Executable.Attrs({
-        cfgScript: '/home/vagrant/Desktop/dory/TIRTOStest/empty_min.cfg',
+        cfgScript: '/home/vagrant/dory-firmware/TIRTOStest/empty_min.cfg',
         profile: 'release',
         cfgHome: 'xconfig_empty_min',
 });
@@ -40,8 +40,8 @@ else {
 }
 
 var thisObj = {
-    cfg:        '/home/vagrant/Desktop/dory/TIRTOStest/empty_min.cfg',
-    outputPath: '/home/vagrant/Desktop/dory/TIRTOStest/.config/xconfig_empty_min',
+    cfg:        '/home/vagrant/dory-firmware/TIRTOStest/empty_min.cfg',
+    outputPath: '/home/vagrant/dory-firmware/TIRTOStest/.config/xconfig_empty_min',
     exeName:    'empty_min' + suffix,
     exeIntName: 'empty_min' + suffix.replace('.', '_'),
     targ:       targ,

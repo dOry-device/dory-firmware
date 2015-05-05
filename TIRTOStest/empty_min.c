@@ -62,20 +62,21 @@
  */
 Void heartBeatFxn(UArg arg0, UArg arg1)
 {
-    while (1) {
-        Task_sleep((unsigned int)arg0);
-        GPIO_toggle(Board_LED0);
+	doryI2C_init();
 
-
-        doryI2C_getTemperature();
-        System_printf("hl\n");
+    while(1) {
+    	//doryI2C_getTemperature();
+    	doryI2C_checkBus();
+    	Task_sleep((unsigned int)arg0);
 	}
+
+    //doryI2C_close();
 }
 
 Void greenLedFxn(UArg arg0, UArg arg1)
 {
     while (1) {
-        Task_sleep((unsigned int)20);
+        Task_sleep((unsigned int)2000);
         GPIO_toggle(Board_LED1);
 	}
 }
@@ -88,6 +89,7 @@ int main(void)
     /* Call board init functions. */
     Board_initGeneral();
     Board_initGPIO();
+	Board_initI2C();
     // Board_initSDSPI();
     // Board_initSPI();
     // Board_initUART();
@@ -100,10 +102,6 @@ int main(void)
 
     System_printf("hoil\n");
     System_flush();
-
-    //initialize dory i2c:
-    doryI2C_init();
-
 
     /* Start BIOS */
     BIOS_start();

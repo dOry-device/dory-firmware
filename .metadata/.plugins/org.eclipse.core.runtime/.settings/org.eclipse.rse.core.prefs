@@ -1,3 +1,4 @@
 activeuserprofiles=Octanis1-dev-box;Team
 eclipse.preferences.version=1
 org.eclipse.rse.systemtype.local.systemType.defaultUserId=vagrant
+useridperkey=Octanis1-dev-box.Local\=vagrant;

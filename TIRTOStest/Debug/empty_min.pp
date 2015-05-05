@@ -128,6 +128,23 @@ empty_min.obj: /home/vagrant/ti/tirtos_msp43x_2_12_00_24/products/bios_6_41_03_5
 empty_min.obj: /home/vagrant/ti/tirtos_msp43x_2_12_00_24/products/bios_6_41_03_51/packages/ti/sysbios/knl/Task__epilogue.h
 empty_min.obj: /home/vagrant/ti/tirtos_msp43x_2_12_00_24/products/bios_6_41_03_51/packages/ti/sysbios/knl/package/Task_SupportProxy.h
 empty_min.obj: /home/vagrant/ti/tirtos_msp43x_2_12_00_24/products/bios_6_41_03_51/packages/ti/sysbios/knl/Task.h
+empty_min.obj: /home/vagrant/ti/tirtos_msp43x_2_12_00_24/products/bios_6_41_03_51/packages/ti/sysbios/hal/Hwi.h
+empty_min.obj: /home/vagrant/ti/xdctools_3_31_00_24_core/packages/xdc/runtime/Types.h
+empty_min.obj: /home/vagrant/ti/xdctools_3_31_00_24_core/packages/xdc/runtime/IInstance.h
+empty_min.obj: /home/vagrant/ti/tirtos_msp43x_2_12_00_24/products/bios_6_41_03_51/packages/ti/sysbios/hal/Hwi__prologue.h
+empty_min.obj: /home/vagrant/ti/tirtos_msp43x_2_12_00_24/products/bios_6_41_03_51/packages/ti/sysbios/hal/package/package.defs.h
+empty_min.obj: /home/vagrant/ti/xdctools_3_31_00_24_core/packages/xdc/runtime/Error.h
+empty_min.obj: /home/vagrant/ti/tirtos_msp43x_2_12_00_24/products/bios_6_41_03_51/packages/ti/sysbios/interfaces/IHwi.h
+empty_min.obj: /home/vagrant/ti/xdctools_3_31_00_24_core/packages/xdc/runtime/Types.h
+empty_min.obj: /home/vagrant/ti/xdctools_3_31_00_24_core/packages/xdc/runtime/IInstance.h
+empty_min.obj: /home/vagrant/ti/xdctools_3_31_00_24_core/packages/xdc/runtime/Error.h
+empty_min.obj: /home/vagrant/ti/xdctools_3_31_00_24_core/packages/xdc/runtime/IModule.h
+empty_min.obj: /home/vagrant/ti/tirtos_msp43x_2_12_00_24/products/bios_6_41_03_51/packages/ti/sysbios/hal/package/Hwi_HwiProxy.h
+empty_min.obj: /home/vagrant/ti/xdctools_3_31_00_24_core/packages/xdc/runtime/Types.h
+empty_min.obj: /home/vagrant/ti/xdctools_3_31_00_24_core/packages/xdc/runtime/IInstance.h
+empty_min.obj: /home/vagrant/ti/tirtos_msp43x_2_12_00_24/products/bios_6_41_03_51/packages/ti/sysbios/interfaces/IHwi.h
+empty_min.obj: /home/vagrant/ti/tirtos_msp43x_2_12_00_24/products/bios_6_41_03_51/packages/ti/sysbios/hal/Hwi__epilogue.h
+empty_min.obj: /home/vagrant/ti/tirtos_msp43x_2_12_00_24/products/bios_6_41_03_51/packages/ti/sysbios/hal/package/Hwi_HwiProxy.h
 empty_min.obj: /home/vagrant/ti/xdctools_3_31_00_24_core/packages/xdc/runtime/System.h
 empty_min.obj: /home/vagrant/ti/xdctools_3_31_00_24_core/packages/xdc/runtime/Types.h
 empty_min.obj: /home/vagrant/ti/xdctools_3_31_00_24_core/packages/xdc/runtime/IModule.h
@@ -300,6 +317,23 @@ empty_min.obj: /home/vagrant/ti/xdctools_3_31_00_24_core/packages/xdc/runtime/Sy
 /home/vagrant/ti/tirtos_msp43x_2_12_00_24/products/bios_6_41_03_51/packages/ti/sysbios/knl/Task__epilogue.h: 
 /home/vagrant/ti/tirtos_msp43x_2_12_00_24/products/bios_6_41_03_51/packages/ti/sysbios/knl/package/Task_SupportProxy.h: 
 /home/vagrant/ti/tirtos_msp43x_2_12_00_24/products/bios_6_41_03_51/packages/ti/sysbios/knl/Task.h: 
+/home/vagrant/ti/tirtos_msp43x_2_12_00_24/products/bios_6_41_03_51/packages/ti/sysbios/hal/Hwi.h: 
+/home/vagrant/ti/xdctools_3_31_00_24_core/packages/xdc/runtime/Types.h: 
+/home/vagrant/ti/xdctools_3_31_00_24_core/packages/xdc/runtime/IInstance.h: 
+/home/vagrant/ti/tirtos_msp43x_2_12_00_24/products/bios_6_41_03_51/packages/ti/sysbios/hal/Hwi__prologue.h: 
+/home/vagrant/ti/tirtos_msp43x_2_12_00_24/products/bios_6_41_03_51/packages/ti/sysbios/hal/package/package.defs.h: 
+/home/vagrant/ti/xdctools_3_31_00_24_core/packages/xdc/runtime/Error.h: 
+/home/vagrant/ti/tirtos_msp43x_2_12_00_24/products/bios_6_41_03_51/packages/ti/sysbios/interfaces/IHwi.h: 
+/home/vagrant/ti/xdctools_3_31_00_24_core/packages/xdc/runtime/Types.h: 
+/home/vagrant/ti/xdctools_3_31_00_24_core/packages/xdc/runtime/IInstance.h: 
+/home/vagrant/ti/xdctools_3_31_00_24_core/packages/xdc/runtime/Error.h: 
+/home/vagrant/ti/xdctools_3_31_00_24_core/packages/xdc/runtime/IModule.h: 
+/home/vagrant/ti/tirtos_msp43x_2_12_00_24/products/bios_6_41_03_51/packages/ti/sysbios/hal/package/Hwi_HwiProxy.h: 
+/home/vagrant/ti/xdctools_3_31_00_24_core/packages/xdc/runtime/Types.h: 
+/home/vagrant/ti/xdctools_3_31_00_24_core/packages/xdc/runtime/IInstance.h: 
+/home/vagrant/ti/tirtos_msp43x_2_12_00_24/products/bios_6_41_03_51/packages/ti/sysbios/interfaces/IHwi.h: 
+/home/vagrant/ti/tirtos_msp43x_2_12_00_24/products/bios_6_41_03_51/packages/ti/sysbios/hal/Hwi__epilogue.h: 
+/home/vagrant/ti/tirtos_msp43x_2_12_00_24/products/bios_6_41_03_51/packages/ti/sysbios/hal/package/Hwi_HwiProxy.h: 
 /home/vagrant/ti/xdctools_3_31_00_24_core/packages/xdc/runtime/System.h: 
 /home/vagrant/ti/xdctools_3_31_00_24_core/packages/xdc/runtime/Types.h: 
 /home/vagrant/ti/xdctools_3_31_00_24_core/packages/xdc/runtime/IModule.h: 
