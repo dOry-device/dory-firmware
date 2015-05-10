@@ -360,6 +360,9 @@ digraph configuration {
         ti_drivers_Power [style=filled,fillcolor=lightgray, label="Power"];
         ti_drivers__top -> ti_drivers_Power[style=invis];
         ti_drivers_Power -> ti_drivers__bot[style=invis];
+        ti_drivers_UART [style=filled,fillcolor=lightgray, label="UART"];
+        ti_drivers__top -> ti_drivers_UART[style=invis];
+        ti_drivers_UART -> ti_drivers__bot[style=invis];
     }
     subgraph cluster37 {
         label="";

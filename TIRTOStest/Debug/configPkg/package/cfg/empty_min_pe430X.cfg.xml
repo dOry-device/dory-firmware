@@ -2399,12 +2399,12 @@
   <field name="boardName">msp430</field>
   <field name="boardFamily">null</field>
   <field name="boardRevision">null</field>
-</struct></field><field name='attrs'>xdc.services.intern.xsr.Value$Obj@11d84e6::(xdc.platform.ICpuDataSheet.Instance)ti.catalog.msp430.MSP430.Instance#0</field><field name='memoryMap'></field></instance>
+</struct></field><field name='attrs'>xdc.services.intern.xsr.Value$Obj@1005629::(xdc.platform.ICpuDataSheet.Instance)ti.catalog.msp430.MSP430.Instance#0</field><field name='memoryMap'></field></instance>
             </feature>
             <feature name="platformName" type="string" value="ti.platforms.msp430%3AMSP430F5529"/>
             <feature name="platform" type="xdc.platform.IPlatform.Instance"><instance id='ti.platforms.msp430.Platform.Instance#0' ><field name='externalMemoryMap'></field><field name='customMemoryMap'></field><field name='renameMap'></field><field name='dataMemory'>null</field><field name='codeMemory'>null</field><field name='stackMemory'>null</field><field name='sectMap'></field><field name='peripherals'></field></instance>
             </feature>
-            <feature name="global" type="object"><map id='xdc.cfg.Program/global'  length='4'><entry key='heartBeatTask'>xdc.services.intern.xsr.Value$Obj@190730d::ti.sysbios.knl.Task.Instance#0</entry><entry key='greenLed'>xdc.services.intern.xsr.Value$Obj@718764::ti.sysbios.knl.Task.Instance#1</entry><entry key='hwi0'>xdc.services.intern.xsr.Value$Obj@16fdd71::ti.sysbios.hal.Hwi.Instance#0</entry><entry key='TI_DRIVERS_WIFI_INCLUDED'>false</entry></map>
+            <feature name="global" type="object"><map id='xdc.cfg.Program/global'  length='6'><entry key='heartBeatTask'>xdc.services.intern.xsr.Value$Obj@718764::ti.sysbios.knl.Task.Instance#0</entry><entry key='greenLed'>xdc.services.intern.xsr.Value$Obj@16fdd71::ti.sysbios.knl.Task.Instance#1</entry><entry key='hwi0'>xdc.services.intern.xsr.Value$Obj@1333f12::ti.sysbios.hal.Hwi.Instance#0</entry><entry key='hwi1'>xdc.services.intern.xsr.Value$Obj@171cad9::ti.sysbios.hal.Hwi.Instance#1</entry><entry key='echo'>xdc.services.intern.xsr.Value$Obj@1bc778e::ti.sysbios.knl.Task.Instance#2</entry><entry key='TI_DRIVERS_WIFI_INCLUDED'>false</entry></map>
             </feature>
             <feature name="symbol" type="object"><map id='xdc.cfg.Program/symbol'  length='2'><entry key='xdc_runtime_Startup__EXECFXN__C'>0x1</entry><entry key='xdc_runtime_Startup__RESETFXN__C'>0x1</entry></map>
             </feature>
@@ -2806,7 +2806,7 @@
       </field>
     </struct>
   </entry>
-</map></field><field name='Module__diagsEnabled'>0x0</field><field name='Module__diagsIncluded'>0x0</field><field name='Module__diagsMask'>null</field><field name='Module__gateObj'>null</field><field name='Module__gatePrms'>null</field><field name='Module__id'>0x18</field><field name='Module__loggerDefined'>false</field><field name='Module__loggerObj'>null</field><field name='Module__loggerFxn0'>null</field><field name='Module__loggerFxn1'>null</field><field name='Module__loggerFxn2'>null</field><field name='Module__loggerFxn4'>null</field><field name='Module__loggerFxn8'>null</field><field name='Module__startupDoneFxn'>null</field><field name='Object__count'>0x0</field><field name='Object__heap'>null</field><field name='Object__sizeof'>0x0</field><field name='Object__table'>null</field><field name='Q_BLOCKING'>0x1</field><field name='Q_PREEMPTING'>0x2</field><field name='delegate$'>xdc.services.intern.xsr.Value$Obj@c50033::(xdc.runtime.IGateProvider.Module)ti.sysbios.gates.GateMutex</field><field name='abstractInstances$'>false</field></module>
+</map></field><field name='Module__diagsEnabled'>0x0</field><field name='Module__diagsIncluded'>0x0</field><field name='Module__diagsMask'>null</field><field name='Module__gateObj'>null</field><field name='Module__gatePrms'>null</field><field name='Module__id'>0x18</field><field name='Module__loggerDefined'>false</field><field name='Module__loggerObj'>null</field><field name='Module__loggerFxn0'>null</field><field name='Module__loggerFxn1'>null</field><field name='Module__loggerFxn2'>null</field><field name='Module__loggerFxn4'>null</field><field name='Module__loggerFxn8'>null</field><field name='Module__startupDoneFxn'>null</field><field name='Object__count'>0x0</field><field name='Object__heap'>null</field><field name='Object__sizeof'>0x0</field><field name='Object__table'>null</field><field name='Q_BLOCKING'>0x1</field><field name='Q_PREEMPTING'>0x2</field><field name='delegate$'>xdc.services.intern.xsr.Value$Obj@1cff046::(xdc.runtime.IGateProvider.Module)ti.sysbios.gates.GateMutex</field><field name='abstractInstances$'>false</field></module>
             </feature>
         </module>
         <module name="ti.sysbios.Build"
@@ -3065,7 +3065,7 @@
       </field>
     </struct>
   </entry>
-</map></field><field name='Module__diagsEnabled'>0x0</field><field name='Module__diagsIncluded'>0x0</field><field name='Module__diagsMask'>null</field><field name='Module__gateObj'>null</field><field name='Module__gatePrms'>null</field><field name='Module__id'>0x24</field><field name='Module__loggerDefined'>false</field><field name='Module__loggerObj'>null</field><field name='Module__loggerFxn0'>null</field><field name='Module__loggerFxn1'>null</field><field name='Module__loggerFxn2'>null</field><field name='Module__loggerFxn4'>null</field><field name='Module__loggerFxn8'>null</field><field name='Module__startupDoneFxn'>null</field><field name='Object__count'>0x0</field><field name='Object__heap'>null</field><field name='Object__sizeof'>0x0</field><field name='Object__table'>null</field><field name='dispatcherAutoNestingSupport'>true</field><field name='dispatcherSwiSupport'>undefined</field><field name='dispatcherTaskSupport'>undefined</field><field name='dispatcherIrpTrackingSupport'>true</field><field name='delegate$'>xdc.services.intern.xsr.Value$Obj@a4bea0::(ti.sysbios.interfaces.IHwi.Module)ti.sysbios.family.msp430.Hwi</field><field name='abstractInstances$'>false</field></module>
+</map></field><field name='Module__diagsEnabled'>0x0</field><field name='Module__diagsIncluded'>0x0</field><field name='Module__diagsMask'>null</field><field name='Module__gateObj'>null</field><field name='Module__gatePrms'>null</field><field name='Module__id'>0x24</field><field name='Module__loggerDefined'>false</field><field name='Module__loggerObj'>null</field><field name='Module__loggerFxn0'>null</field><field name='Module__loggerFxn1'>null</field><field name='Module__loggerFxn2'>null</field><field name='Module__loggerFxn4'>null</field><field name='Module__loggerFxn8'>null</field><field name='Module__startupDoneFxn'>null</field><field name='Object__count'>0x0</field><field name='Object__heap'>null</field><field name='Object__sizeof'>0x0</field><field name='Object__table'>null</field><field name='dispatcherAutoNestingSupport'>true</field><field name='dispatcherSwiSupport'>undefined</field><field name='dispatcherTaskSupport'>undefined</field><field name='dispatcherIrpTrackingSupport'>true</field><field name='delegate$'>xdc.services.intern.xsr.Value$Obj@9647d6::(ti.sysbios.interfaces.IHwi.Module)ti.sysbios.family.msp430.Hwi</field><field name='abstractInstances$'>false</field></module>
             </feature>
         </module>
         <module name="ti.sysbios.hal.Power"
@@ -3328,7 +3328,7 @@
       </field>
     </struct>
   </entry>
-</map></field><field name='Module__diagsEnabled'>0x0</field><field name='Module__diagsIncluded'>0x0</field><field name='Module__diagsMask'>null</field><field name='Module__gateObj'>null</field><field name='Module__gatePrms'>null</field><field name='Module__id'>0x20</field><field name='Module__loggerDefined'>false</field><field name='Module__loggerObj'>null</field><field name='Module__loggerFxn0'>null</field><field name='Module__loggerFxn1'>null</field><field name='Module__loggerFxn2'>null</field><field name='Module__loggerFxn4'>null</field><field name='Module__loggerFxn8'>null</field><field name='Module__startupDoneFxn'>null</field><field name='Object__count'>0x0</field><field name='Object__heap'>null</field><field name='Object__sizeof'>0x0</field><field name='Object__table'>null</field><field name='ANY'>(-0x0 - 1)</field><field name='supportsDynamic'>false</field><field name='defaultDynamic'>false</field><field name='delegate$'>xdc.services.intern.xsr.Value$Obj@176b571::(ti.sysbios.interfaces.ITimer.Module)ti.sysbios.family.msp430.Timer</field><field name='abstractInstances$'>false</field></module>
+</map></field><field name='Module__diagsEnabled'>0x0</field><field name='Module__diagsIncluded'>0x0</field><field name='Module__diagsMask'>null</field><field name='Module__gateObj'>null</field><field name='Module__gatePrms'>null</field><field name='Module__id'>0x20</field><field name='Module__loggerDefined'>false</field><field name='Module__loggerObj'>null</field><field name='Module__loggerFxn0'>null</field><field name='Module__loggerFxn1'>null</field><field name='Module__loggerFxn2'>null</field><field name='Module__loggerFxn4'>null</field><field name='Module__loggerFxn8'>null</field><field name='Module__startupDoneFxn'>null</field><field name='Object__count'>0x0</field><field name='Object__heap'>null</field><field name='Object__sizeof'>0x0</field><field name='Object__table'>null</field><field name='ANY'>(-0x0 - 1)</field><field name='supportsDynamic'>false</field><field name='defaultDynamic'>false</field><field name='delegate$'>xdc.services.intern.xsr.Value$Obj@167b853::(ti.sysbios.interfaces.ITimer.Module)ti.sysbios.family.msp430.Timer</field><field name='abstractInstances$'>false</field></module>
             </feature>
             <feature name="LW_delayed" type="xdc.runtime.Log.EventDesc"><struct id='xdc.runtime.Log.EventDesc#15' ><field name='mask'>0x400</field><field name='level'>undefined</field><field name='msg'>LW_delayed: delay: %d</field></struct>
             </feature>
@@ -3676,7 +3676,7 @@
       </field>
     </struct>
   </entry>
-</map></field><field name='Module__diagsEnabled'>0x0</field><field name='Module__diagsIncluded'>0x0</field><field name='Module__diagsMask'>null</field><field name='Module__gateObj'>null</field><field name='Module__gatePrms'>null</field><field name='Module__id'>0x21</field><field name='Module__loggerDefined'>false</field><field name='Module__loggerObj'>null</field><field name='Module__loggerFxn0'>null</field><field name='Module__loggerFxn1'>null</field><field name='Module__loggerFxn2'>null</field><field name='Module__loggerFxn4'>null</field><field name='Module__loggerFxn8'>null</field><field name='Module__startupDoneFxn'>null</field><field name='Object__count'>0x0</field><field name='Object__heap'>null</field><field name='Object__sizeof'>0x0</field><field name='Object__table'>null</field><field name='delegate$'>xdc.services.intern.xsr.Value$Obj@8aa1c8::(ti.sysbios.interfaces.IIntrinsicsSupport.Module)ti.sysbios.family.msp430.IntrinsicsSupport</field></module>
+</map></field><field name='Module__diagsEnabled'>0x0</field><field name='Module__diagsIncluded'>0x0</field><field name='Module__diagsMask'>null</field><field name='Module__gateObj'>null</field><field name='Module__gatePrms'>null</field><field name='Module__id'>0x21</field><field name='Module__loggerDefined'>false</field><field name='Module__loggerObj'>null</field><field name='Module__loggerFxn0'>null</field><field name='Module__loggerFxn1'>null</field><field name='Module__loggerFxn2'>null</field><field name='Module__loggerFxn4'>null</field><field name='Module__loggerFxn8'>null</field><field name='Module__startupDoneFxn'>null</field><field name='Object__count'>0x0</field><field name='Object__heap'>null</field><field name='Object__sizeof'>0x0</field><field name='Object__table'>null</field><field name='delegate$'>xdc.services.intern.xsr.Value$Obj@6bd987::(ti.sysbios.interfaces.IIntrinsicsSupport.Module)ti.sysbios.family.msp430.IntrinsicsSupport</field></module>
             </feature>
         </module>
         <module name="ti.sysbios.knl.Event"
@@ -4374,7 +4374,7 @@
       </field>
     </struct>
   </entry>
-</map></field><field name='Module__diagsEnabled'>0x0</field><field name='Module__diagsIncluded'>0x0</field><field name='Module__diagsMask'>null</field><field name='Module__gateObj'>null</field><field name='Module__gatePrms'>null</field><field name='Module__id'>0x22</field><field name='Module__loggerDefined'>false</field><field name='Module__loggerObj'>null</field><field name='Module__loggerFxn0'>null</field><field name='Module__loggerFxn1'>null</field><field name='Module__loggerFxn2'>null</field><field name='Module__loggerFxn4'>null</field><field name='Module__loggerFxn8'>null</field><field name='Module__startupDoneFxn'>null</field><field name='Object__count'>0x0</field><field name='Object__heap'>null</field><field name='Object__sizeof'>0x0</field><field name='Object__table'>null</field><field name='defaultStackSize'>undefined</field><field name='stackAlignment'>undefined</field><field name='delegate$'>xdc.services.intern.xsr.Value$Obj@128210a::(ti.sysbios.interfaces.ITaskSupport.Module)ti.sysbios.family.msp430.TaskSupport</field></module>
+</map></field><field name='Module__diagsEnabled'>0x0</field><field name='Module__diagsIncluded'>0x0</field><field name='Module__diagsMask'>null</field><field name='Module__gateObj'>null</field><field name='Module__gatePrms'>null</field><field name='Module__id'>0x22</field><field name='Module__loggerDefined'>false</field><field name='Module__loggerObj'>null</field><field name='Module__loggerFxn0'>null</field><field name='Module__loggerFxn1'>null</field><field name='Module__loggerFxn2'>null</field><field name='Module__loggerFxn4'>null</field><field name='Module__loggerFxn8'>null</field><field name='Module__startupDoneFxn'>null</field><field name='Object__count'>0x0</field><field name='Object__heap'>null</field><field name='Object__sizeof'>0x0</field><field name='Object__table'>null</field><field name='defaultStackSize'>undefined</field><field name='stackAlignment'>undefined</field><field name='delegate$'>xdc.services.intern.xsr.Value$Obj@1641c4::(ti.sysbios.interfaces.ITaskSupport.Module)ti.sysbios.family.msp430.TaskSupport</field></module>
             </feature>
             <feature name="numConstructedTasks" type="number" value="0"/>
             <feature name="startupHookFunc" type="object" value="null"/>
@@ -5254,20 +5254,20 @@
   <field name="arg">0x2d</field>
 </struct></elem><elem><struct id="ti.sysbios.family.msp430.Hwi/interrupt/46">
   <field name="name"/>
-  <field name="used">false</field>
+  <field name="used">true</field>
   <field name="generateStub">true</field>
   <field name="swiEnabled">false</field>
-  <field name="taskEnabled">false</field>
+  <field name="taskEnabled">true</field>
   <field name="nestingEnabled">false</field>
-  <field name="isrStackEnabled">false</field>
+  <field name="isrStackEnabled">true</field>
   <field name="lmBeginEnabled">false</field>
   <field name="ldEndEnabled">false</field>
-  <field name="threadTypeEnabled">false</field>
+  <field name="threadTypeEnabled">true</field>
   <field name="keepAwakeEnabled">false</field>
-  <field name="handle">undefined</field>
-  <field name="fxn">null</field>
+  <field name="handle">&amp;ti_sysbios_family_msp430_Hwi_Object__table__V[2]</field>
+  <field name="fxn">&amp;UARTUSCIA_hwiIntFxn</field>
   <field name="pfxn">undefined</field>
-  <field name="arg">0x2e</field>
+  <field name="arg">0x0</field>
 </struct></elem><elem><struct id="ti.sysbios.family.msp430.Hwi/interrupt/47">
   <field name="name"/>
   <field name="used">false</field>
@@ -6327,8 +6327,134 @@
                 uses="">
         </module>
         <module name="ti.drivers.UART"
-                used="false"
+                used="true"
                 uses="">
+            <feature name="common$" type="xdc.runtime.Types.Common%24"><struct id='ti.drivers.UART/common$' ><field name='diags_ASSERT'>ALWAYS_OFF</field><field name='diags_ENTRY'>ALWAYS_OFF</field><field name='diags_EXIT'>ALWAYS_OFF</field><field name='diags_INTERNAL'>ALWAYS_OFF</field><field name='diags_LIFECYCLE'>ALWAYS_OFF</field><field name='diags_STATUS'>ALWAYS_OFF</field><field name='diags_USER1'>ALWAYS_OFF</field><field name='diags_USER2'>ALWAYS_OFF</field><field name='diags_USER3'>ALWAYS_OFF</field><field name='diags_USER4'>ALWAYS_OFF</field><field name='diags_USER5'>ALWAYS_OFF</field><field name='diags_USER6'>ALWAYS_OFF</field><field name='diags_USER7'>ALWAYS_OFF</field><field name='diags_INFO'>ALWAYS_OFF</field><field name='diags_USER8'>ALWAYS_OFF</field><field name='diags_ANALYSIS'>ALWAYS_OFF</field><field name='fxntab'>false</field><field name='gate'>null</field><field name='gateParams'>null</field><field name='instanceHeap'>null</field><field name='instanceSection'>null</field><field name='logger'>null</field><field name='outPolicy'>COMMON_FILE</field><field name='memoryPolicy'>STATIC_POLICY</field><field name='namedInstance'>false</field><field name='namedModule'>false</field><field name='romPatchTable'>false</field></struct>
+            </feature>
+            <feature name="viewNameMap$" type="object"><map id='ti.drivers.UART/viewNameMap$'  length='0'></map>
+            </feature>
+            <feature name="rovShowRawTab$" type="boolean" value="true"/>
+            <feature name="configNameMap$" type="object"><map id='ti.drivers.UART/configNameMap$'  length='6'><entry key='xdc.runtime/Memory'><struct id="ti.drivers.UART/configNameMap$/&quot;xdc.runtime/Memory&quot;">
+  <field name="viewType">module</field>
+  <field name="viewFxn">undefined</field>
+  <field name="fields">
+    <vector id="ti.drivers.UART/configNameMap$/&quot;xdc.runtime/Memory&quot;/fields" length="7">
+      <elem>common$.instanceHeap</elem>
+      <elem>common$.instanceSection</elem>
+      <elem>common$.memoryPolicy</elem>
+      <elem>common$.namedModule</elem>
+      <elem>common$.namedInstance</elem>
+      <elem>common$.fxntab</elem>
+      <elem>common$.romPatchTable</elem>
+    </vector>
+  </field>
+</struct></entry><entry key='xdc.runtime/Diagnostics'><struct id="ti.drivers.UART/configNameMap$/&quot;xdc.runtime/Diagnostics&quot;">
+  <field name="viewType">module</field>
+  <field name="viewFxn">undefined</field>
+  <field name="fields">
+    <vector id="ti.drivers.UART/configNameMap$/&quot;xdc.runtime/Diagnostics&quot;/fields" length="15">
+      <elem>common$.logger</elem>
+      <elem>common$.diags_ASSERT</elem>
+      <elem>common$.diags_ENTRY</elem>
+      <elem>common$.diags_EXIT</elem>
+      <elem>common$.diags_INTERNAL</elem>
+      <elem>common$.diags_LIFECYCLE</elem>
+      <elem>common$.diags_STATUS</elem>
+      <elem>common$.diags_USER1</elem>
+      <elem>common$.diags_USER2</elem>
+      <elem>common$.diags_USER3</elem>
+      <elem>common$.diags_USER4</elem>
+      <elem>common$.diags_USER5</elem>
+      <elem>common$.diags_USER6</elem>
+      <elem>common$.diags_INFO</elem>
+      <elem>common$.diags_ANALYSIS</elem>
+    </vector>
+  </field>
+</struct></entry><entry key='xdc.runtime/Concurrency'><struct id="ti.drivers.UART/configNameMap$/&quot;xdc.runtime/Concurrency&quot;">
+  <field name="viewType">module</field>
+  <field name="viewFxn">undefined</field>
+  <field name="fields">
+    <vector id="ti.drivers.UART/configNameMap$/&quot;xdc.runtime/Concurrency&quot;/fields" length="2">
+      <elem>common$.gate</elem>
+      <elem>common$.gateParams</elem>
+    </vector>
+  </field>
+</struct></entry><entry key='xdc.runtime/Log Events'><struct id="ti.drivers.UART/configNameMap$/&quot;xdc.runtime/Log Events&quot;">
+  <field name="viewType">instance</field>
+  <field name="viewFxn">undefined</field>
+  <field name="fields">
+    <vector id="ti.drivers.UART/configNameMap$/&quot;xdc.runtime/Log Events&quot;/fields" length="1">
+      <elem>Log.Event</elem>
+    </vector>
+  </field>
+</struct></entry><entry key='xdc.runtime/Asserts'><struct id="ti.drivers.UART/configNameMap$/&quot;xdc.runtime/Asserts&quot;">
+  <field name="viewType">instance</field>
+  <field name="viewFxn">undefined</field>
+  <field name="fields">
+    <vector id="ti.drivers.UART/configNameMap$/&quot;xdc.runtime/Asserts&quot;/fields" length="1">
+      <elem>Assert.Id</elem>
+    </vector>
+  </field>
+</struct></entry><entry key='xdc.runtime/Errors'><struct id="ti.drivers.UART/configNameMap$/&quot;xdc.runtime/Errors&quot;">
+  <field name="viewType">instance</field>
+  <field name="viewFxn">undefined</field>
+  <field name="fields">
+    <vector id="ti.drivers.UART/configNameMap$/&quot;xdc.runtime/Errors&quot;/fields" length="1">
+      <elem>Error.Id</elem>
+    </vector>
+  </field>
+</struct></entry></map>
+            </feature>
+            <feature name="Module__diagsEnabled" type="number" value="0"/>
+            <feature name="Module__diagsIncluded" type="number" value="0"/>
+            <feature name="Module__diagsMask" type="object" value="null"/>
+            <feature name="Module__gateObj" type="object" value="null"/>
+            <feature name="Module__gatePrms" type="object" value="null"/>
+            <feature name="Module__id" type="number" value="0"/>
+            <feature name="Module__loggerDefined" type="boolean" value="false"/>
+            <feature name="Module__loggerObj" type="object" value="null"/>
+            <feature name="Module__loggerFxn0" type="object" value="null"/>
+            <feature name="Module__loggerFxn1" type="object" value="null"/>
+            <feature name="Module__loggerFxn2" type="object" value="null"/>
+            <feature name="Module__loggerFxn4" type="object" value="null"/>
+            <feature name="Module__loggerFxn8" type="object" value="null"/>
+            <feature name="Module__startupDoneFxn" type="object" value="null"/>
+            <feature name="Object__count" type="number" value="0"/>
+            <feature name="Object__heap" type="object" value="null"/>
+            <feature name="Object__sizeof" type="number" value="0"/>
+            <feature name="Object__table" type="object" value="null"/>
+            <feature name="libType" type="object" value="ti.drivers.UART.LibType_Instrumented"/>
+            <feature name="rovViewInfo" type="xdc.rov.ViewInfo.Instance"><instance id='xdc.rov.ViewInfo.Instance#25' ><field name='viewMap'><map id="xdc.rov.ViewInfo.Instance#25/viewMap" length="4">
+  <entry key="Basic">
+    <struct id="xdc.rov.ViewInfo.Instance#25/viewMap/&quot;Basic&quot;">
+      <field name="type">MODULE_DATA</field>
+      <field name="viewInitFxn">viewInitBasic</field>
+      <field name="structName">BasicView</field>
+    </struct>
+  </entry>
+  <entry key="Config">
+    <struct id="xdc.rov.ViewInfo.Instance#25/viewMap/&quot;Config&quot;">
+      <field name="type">MODULE_DATA</field>
+      <field name="viewInitFxn">viewInitConfig</field>
+      <field name="structName">ConfigView</field>
+    </struct>
+  </entry>
+  <entry key="Write Buffer">
+    <struct id="xdc.rov.ViewInfo.Instance#25/viewMap/&quot;Write Buffer&quot;">
+      <field name="type">MODULE_DATA</field>
+      <field name="viewInitFxn">viewInitWriteBuffer</field>
+      <field name="structName">BufferView</field>
+    </struct>
+  </entry>
+  <entry key="Read Buffer">
+    <struct id="xdc.rov.ViewInfo.Instance#25/viewMap/&quot;Read Buffer&quot;">
+      <field name="type">MODULE_DATA</field>
+      <field name="viewInitFxn">viewInitReadBuffer</field>
+      <field name="structName">BufferView</field>
+    </struct>
+  </entry>
+</map></field><field name='showRawTab'>true</field></instance>
+            </feature>
         </module>
         <module name="ti.drivers.USBMSCHFatFs"
                 used="false"
@@ -6356,7 +6482,7 @@
             <feature name="usePWM" type="boolean" value="false"/>
             <feature name="useSDSPI" type="boolean" value="false"/>
             <feature name="useSPI" type="boolean" value="false"/>
-            <feature name="useUART" type="boolean" value="false"/>
+            <feature name="useUART" type="boolean" value="true"/>
             <feature name="useUSBMSCHFatFs" type="boolean" value="false"/>
             <feature name="useWatchdog" type="boolean" value="false"/>
             <feature name="supportsCamera" type="boolean" value="false"/>

@@ -145,6 +145,8 @@ empty_min.obj: /home/vagrant/ti/xdctools_3_31_00_24_core/packages/xdc/runtime/II
 empty_min.obj: /home/vagrant/ti/tirtos_msp43x_2_12_00_24/products/bios_6_41_03_51/packages/ti/sysbios/interfaces/IHwi.h
 empty_min.obj: /home/vagrant/ti/tirtos_msp43x_2_12_00_24/products/bios_6_41_03_51/packages/ti/sysbios/hal/Hwi__epilogue.h
 empty_min.obj: /home/vagrant/ti/tirtos_msp43x_2_12_00_24/products/bios_6_41_03_51/packages/ti/sysbios/hal/package/Hwi_HwiProxy.h
+empty_min.obj: /home/vagrant/ti/tirtos_msp43x_2_12_00_24/products/bios_6_41_03_51/packages/ti/sysbios/hal/Hwi.h
+empty_min.obj: /home/vagrant/ti/tirtos_msp43x_2_12_00_24/products/bios_6_41_03_51/packages/ti/sysbios/knl/Task.h
 empty_min.obj: /home/vagrant/ti/xdctools_3_31_00_24_core/packages/xdc/runtime/System.h
 empty_min.obj: /home/vagrant/ti/xdctools_3_31_00_24_core/packages/xdc/runtime/Types.h
 empty_min.obj: /home/vagrant/ti/xdctools_3_31_00_24_core/packages/xdc/runtime/IModule.h
@@ -177,6 +179,8 @@ empty_min.obj: /home/vagrant/ti/xdctools_3_31_00_24_core/packages/xdc/runtime/IG
 empty_min.obj: /home/vagrant/ti/tirtos_msp43x_2_12_00_24/products/bios_6_41_03_51/packages/ti/sysbios/BIOS__epilogue.h
 empty_min.obj: /home/vagrant/ti/tirtos_msp43x_2_12_00_24/products/bios_6_41_03_51/packages/ti/sysbios/package/BIOS_RtsGateProxy.h
 empty_min.obj: /home/vagrant/ti/tirtos_msp43x_2_12_00_24/packages/ti/drivers/GPIO.h
+empty_min.obj: /home/vagrant/ti/tirtos_msp43x_2_12_00_24/packages/ti/drivers/UART.h
+empty_min.obj: /home/vagrant/ti/ccsv6/tools/compiler/ti-cgt-msp430_4.4.3/include/stddef.h
 empty_min.obj: ../Board.h
 empty_min.obj: ../MSP_EXP430F5529LP.h
 empty_min.obj: ../doryI2C.h
@@ -334,6 +338,8 @@ empty_min.obj: /home/vagrant/ti/xdctools_3_31_00_24_core/packages/xdc/runtime/Sy
 /home/vagrant/ti/tirtos_msp43x_2_12_00_24/products/bios_6_41_03_51/packages/ti/sysbios/interfaces/IHwi.h: 
 /home/vagrant/ti/tirtos_msp43x_2_12_00_24/products/bios_6_41_03_51/packages/ti/sysbios/hal/Hwi__epilogue.h: 
 /home/vagrant/ti/tirtos_msp43x_2_12_00_24/products/bios_6_41_03_51/packages/ti/sysbios/hal/package/Hwi_HwiProxy.h: 
+/home/vagrant/ti/tirtos_msp43x_2_12_00_24/products/bios_6_41_03_51/packages/ti/sysbios/hal/Hwi.h: 
+/home/vagrant/ti/tirtos_msp43x_2_12_00_24/products/bios_6_41_03_51/packages/ti/sysbios/knl/Task.h: 
 /home/vagrant/ti/xdctools_3_31_00_24_core/packages/xdc/runtime/System.h: 
 /home/vagrant/ti/xdctools_3_31_00_24_core/packages/xdc/runtime/Types.h: 
 /home/vagrant/ti/xdctools_3_31_00_24_core/packages/xdc/runtime/IModule.h: 
@@ -366,6 +372,8 @@ empty_min.obj: /home/vagrant/ti/xdctools_3_31_00_24_core/packages/xdc/runtime/Sy
 /home/vagrant/ti/tirtos_msp43x_2_12_00_24/products/bios_6_41_03_51/packages/ti/sysbios/BIOS__epilogue.h: 
 /home/vagrant/ti/tirtos_msp43x_2_12_00_24/products/bios_6_41_03_51/packages/ti/sysbios/package/BIOS_RtsGateProxy.h: 
 /home/vagrant/ti/tirtos_msp43x_2_12_00_24/packages/ti/drivers/GPIO.h: 
+/home/vagrant/ti/tirtos_msp43x_2_12_00_24/packages/ti/drivers/UART.h: 
+/home/vagrant/ti/ccsv6/tools/compiler/ti-cgt-msp430_4.4.3/include/stddef.h: 
 ../Board.h: 
 ../MSP_EXP430F5529LP.h: 
 ../doryI2C.h: 
