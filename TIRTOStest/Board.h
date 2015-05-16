@@ -71,6 +71,7 @@ extern "C" {
 #define Board_USBDEVICE             0
 
 #define Board_UART0                 MSP_EXP430F5529LP_UARTA1
+#define Board_UART_GPS				MSP_EXP430F5529LP_UARTA0
 
 #define Board_WATCHDOG0             MSP_EXP430F5529LP_WATCHDOG
 

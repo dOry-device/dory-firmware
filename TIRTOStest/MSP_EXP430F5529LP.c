@@ -368,12 +368,19 @@ const UARTUSCIA_BaudrateConfig uartUSCIABaudrates[] = {
 /* UART configuration structure */
 const UARTUSCIA_HWAttrs uartUSCIAHWAttrs[MSP_EXP430F5529LP_UARTCOUNT] = {
     {
-        USCI_A1_BASE,
-        USCI_A_UART_CLOCKSOURCE_SMCLK,
-        USCI_A_UART_LSB_FIRST,
-        sizeof(uartUSCIABaudrates)/sizeof(UARTUSCIA_BaudrateConfig),
-        uartUSCIABaudrates
+    		USCI_A1_BASE,
+			USCI_A_UART_CLOCKSOURCE_SMCLK,
+			USCI_A_UART_LSB_FIRST,
+			sizeof(uartUSCIABaudrates)/sizeof(UARTUSCIA_BaudrateConfig),
+			uartUSCIABaudrates
     },
+	{
+			USCI_A0_BASE,
+			USCI_A_UART_CLOCKSOURCE_SMCLK,
+			USCI_A_UART_LSB_FIRST,
+			sizeof(uartUSCIABaudrates)/sizeof(UARTUSCIA_BaudrateConfig),
+			uartUSCIABaudrates
+	}
 };
 
 const UART_Config UART_config[] = {
@@ -382,17 +389,24 @@ const UART_Config UART_config[] = {
         &uartUSCIAObjects[0],
         &uartUSCIAHWAttrs[0]
     },
-    {NULL, NULL, NULL}
+    {
+    	&UARTUSCIA_fxnTable,
+    	&uartUSCIAObjects[1],
+    	&uartUSCIAHWAttrs[1]
+    },
+	{NULL,NULL,NULL}
 };
 
 /*
- *  ======== MSP_EXP430F5529LP_initUART ========
- */
+ *  ======== MSP_EXP430F5529LP_initUART ======== */
 void MSP_EXP430F5529LP_initUART(void)
 {
     /* P4.4,5 = USCI_A1 TXD/RXD */
     GPIO_setAsPeripheralModuleFunctionInputPin(GPIO_PORT_P4,
                                                GPIO_PIN4 | GPIO_PIN5);
+
+    GPIO_setAsPeripheralModuleFunctionInputPin(GPIO_PORT_P3,
+                                               GPIO_PIN3 | GPIO_PIN4);
 
     /* Initialize the UART driver */
     UART_init();

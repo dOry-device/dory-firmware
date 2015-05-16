@@ -76,7 +76,7 @@ Void heartBeatFxn(UArg arg0, UArg arg1)
 Void greenLedFxn(UArg arg0, UArg arg1)
 {
     while (1) {
-        Task_sleep((unsigned int)2000);
+        Task_sleep((unsigned int)200);
         GPIO_toggle(Board_LED1);
 	}
 }
@@ -89,9 +89,11 @@ Void greenLedFxn(UArg arg0, UArg arg1)
 Void echoFxn(UArg arg0, UArg arg1)
 {
     char input;
+    char output;
     UART_Handle uart;
     UART_Params uartParams;
     const char echoPrompt[] = "\fEchoing characters:\r\n";
+
 
     /* Create a UART with data processing off. */
     UART_Params_init(&uartParams);
@@ -110,8 +112,30 @@ Void echoFxn(UArg arg0, UArg arg1)
 
     /* Loop forever echoing */
     while (1) {
-        UART_read(uart, &input, 1);
-        UART_write(uart, &input, 1);
+    	UART_read(uart, &input, 1);
+
+    	UART_close(uart);
+    	uart = UART_open(Board_UART_GPS, &uartParams);
+
+    	if (uart == NULL) {
+    		System_abort("Error opening the UART_GPS");
+    	}
+    	UART_write(uart, &input, 1);
+
+    	int i=0;
+
+    	UART_read(uart, &output, 1);
+    	UART_close(uart);
+
+    	uart = UART_open(Board_UART0, &uartParams);
+
+    	if (uart == NULL) {
+    		System_abort("Error opening the UART0");
+    	}
+
+    	//output = input;
+    	UART_write(uart, &input,1);
+
     }
 }
 
