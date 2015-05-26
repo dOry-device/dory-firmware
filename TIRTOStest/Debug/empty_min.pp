@@ -193,6 +193,8 @@ empty_min.obj: /home/vagrant/ti/ccsv6/tools/compiler/ti-cgt-msp430_4.4.3/include
 empty_min.obj: /home/vagrant/ti/ccsv6/tools/compiler/ti-cgt-msp430_4.4.3/include/_lock.h
 empty_min.obj: /home/vagrant/ti/ccsv6/tools/compiler/ti-cgt-msp430_4.4.3/include/stddef.h
 empty_min.obj: /home/vagrant/ti/xdctools_3_31_00_24_core/packages/xdc/runtime/System.h
+empty_min.obj: ../doryUART.h
+empty_min.obj: /home/vagrant/ti/xdctools_3_31_00_24_core/packages/xdc/runtime/System.h
 
 ../empty_min.c: 
 /home/vagrant/ti/xdctools_3_31_00_24_core/packages/xdc/std.h: 
@@ -386,4 +388,6 @@ empty_min.obj: /home/vagrant/ti/xdctools_3_31_00_24_core/packages/xdc/runtime/Sy
 /home/vagrant/ti/ccsv6/tools/compiler/ti-cgt-msp430_4.4.3/include/linkage.h: 
 /home/vagrant/ti/ccsv6/tools/compiler/ti-cgt-msp430_4.4.3/include/_lock.h: 
 /home/vagrant/ti/ccsv6/tools/compiler/ti-cgt-msp430_4.4.3/include/stddef.h: 
+/home/vagrant/ti/xdctools_3_31_00_24_core/packages/xdc/runtime/System.h: 
+../doryUART.h: 
 /home/vagrant/ti/xdctools_3_31_00_24_core/packages/xdc/runtime/System.h: 

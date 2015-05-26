@@ -1,0 +1,20 @@
+/*
+ * doryUART.h
+ *
+ *  Created on: May 25, 2015
+ *      Author: vagrant
+ */
+
+#ifndef DORYUART_H_
+#define DORYUART_H_
+
+
+/* XDCtools Header files */
+#include <xdc/std.h>
+#include <xdc/cfg/global.h>
+#include <xdc/runtime/System.h>
+
+void dorSUARTfxn(UArg argument);
+
+
+#endif /* DORYUART_H_ */

@@ -1,1 +1,1 @@
-"./MSP_EXP430F5529LP.obj" "./doryI2C.obj" "./empty_min.obj" "../MSP_EXP430F5529LP.cmd" -l"./configPkg/linker.cmd" -l"libmath.a" -l"libc.a" -l"/home/vagrant/ti/tirtos_msp43x_2_12_00_24/products/MSPWare_2_00_00_40a/driverlib/ccs-MSP430F5529/ccs-MSP430F5529.lib" 
+"./MSP_EXP430F5529LP.obj" "./doryI2C.obj" "./doryUART.obj" "./empty_min.obj" "../MSP_EXP430F5529LP.cmd" -l"./configPkg/linker.cmd" -l"libmath.a" -l"libc.a" -l"/home/vagrant/ti/tirtos_msp43x_2_12_00_24/products/MSPWare_2_00_00_40a/driverlib/ccs-MSP430F5529/ccs-MSP430F5529.lib" 
