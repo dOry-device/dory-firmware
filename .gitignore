@@ -1,0 +1,6 @@
+.metadata*
+*.obj
+*.elf
+*.out
+*.xml
+*.pp
