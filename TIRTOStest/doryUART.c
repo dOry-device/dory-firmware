@@ -69,11 +69,14 @@ Void doryUARTfxn(UArg argument)
 	  }
 }
 
-void doryUARTtask()
+char doryUARTtask()
 {
+	char returnvalue=flag;
 	if(flag)
 	{
 		System_printf("UART flag set");
 		flag=0;
 	}
+	UCA0IE |= UCRXIE;                         // Enable USCI_A0 RX interrupt
+	return returnvalue;
 }

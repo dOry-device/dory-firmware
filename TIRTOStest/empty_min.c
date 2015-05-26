@@ -93,6 +93,7 @@ Void echoFxn(UArg arg0, UArg arg1)
     char input;
     char output;
     UART_Handle uart;
+    UART_Handle uartGPS;
     UART_Params uartParams;
     const char echoPrompt[] = "\fEchoing characters:\r\n";
 
@@ -104,40 +105,35 @@ Void echoFxn(UArg arg0, UArg arg1)
     uartParams.readReturnMode = UART_RETURN_FULL;
     uartParams.readEcho = UART_ECHO_OFF;
     uartParams.baudRate = 9600;
-    /*uart = UART_open(Board_UART0, &uartParams);
 
-    if (uart == NULL) {
-        System_abort("Error opening the UART");
-    }
-
-    UART_write(uart, echoPrompt, sizeof(echoPrompt));
 
     /* Loop forever echoing */
+    uart = UART_open(Board_UART0, &uartParams);
+	if (uart == NULL) {
+			System_abort("Error opening the UART");
+	}
+
+	uartGPS = UART_open(Board_UART_GPS, &uartParams);
+	if (uart == NULL) {
+		System_abort("Error opening the UART_GPS");
+	}
+
     while (1) {
-    	/*UART_read(uart, &input, 1);
 
-    	UART_close(uart);*/
-    	uart = UART_open(Board_UART_GPS, &uartParams);
-
-    	if (uart == NULL) {
-    		System_abort("Error opening the UART_GPS");
-    	}
-
-    	UART_read(uart, &output, 1);
-    	UART_close(uart);/*
-
-    	uart = UART_open(Board_UART0, &uartParams);
-
-    	if (uart == NULL) {
-    		System_abort("Error opening the UART0");
-    	}
-
-    	//output = input;
-    	UART_write(uart, &input,1);
-
-
-    	doryUARTtask();*/
+    	UART_write(uart, echoPrompt, sizeof(echoPrompt));
     	Task_sleep((unsigned int)200);
+
+    	UART_read(uart, &input, 1);
+    	UART_write(uart, &input,1);
+    	//UART_close(uart);
+
+
+    	while(!doryUARTtask())
+    	{
+    		Task_sleep((unsigned int)200);
+    	}
+
+
     }
 }
 
@@ -155,7 +151,6 @@ int main(void)
     // Board_initSDSPI();
     // Board_initSPI();
     Board_initUART();
-    // doryUARTinit();
     // Board_initUSB(Board_USBDEVICE);
     // Board_initWatchdog();
     // Board_initWiFi();

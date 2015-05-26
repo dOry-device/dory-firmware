@@ -19,7 +19,7 @@
 
 void doryUARTinit();
 Void doryUARTfxn(UArg argument);
-void doryUARTtask();
+char doryUARTtask();
 
 
 #endif /* DORYUART_H_ */
