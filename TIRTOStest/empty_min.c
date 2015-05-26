@@ -91,9 +91,8 @@ Void greenLedFxn(UArg arg0, UArg arg1)
 Void echoFxn(UArg arg0, UArg arg1)
 {
     char input;
-    char output;
     UART_Handle uart;
-    UART_Handle uartGPS;
+    //UART_Handle uartGPS;
     UART_Params uartParams;
     const char echoPrompt[] = "\fEchoing characters:\r\n";
 
@@ -113,11 +112,11 @@ Void echoFxn(UArg arg0, UArg arg1)
 			System_abort("Error opening the UART");
 	}
 
-	uartGPS = UART_open(Board_UART_GPS, &uartParams);
+	/*uartGPS = UART_open(Board_UART_GPS, &uartParams);
 	if (uart == NULL) {
 		System_abort("Error opening the UART_GPS");
 	}
-
+*/
     while (1) {
 
     	UART_write(uart, echoPrompt, sizeof(echoPrompt));
@@ -127,6 +126,42 @@ Void echoFxn(UArg arg0, UArg arg1)
     	UART_write(uart, &input,1);
     	//UART_close(uart);
 
+/*
+    	while(!doryUARTtask())
+    	{
+    		Task_sleep((unsigned int)200);
+    	}
+*/
+
+    }
+}
+
+/*
+ *  ======== gpsTaskFxn ========
+ *  Task for this function is created statically. See the project's .cfg file.
+ */
+Void gpsTaskFxn(UArg arg0, UArg arg1)
+{
+
+
+    UART_Handle uartGPS;
+    UART_Params uartParamsGPS;
+
+    /* Create a UART with data processing off. */
+    UART_Params_init(&uartParamsGPS);
+    uartParamsGPS.writeDataMode = UART_DATA_BINARY;
+    uartParamsGPS.readDataMode = UART_DATA_BINARY;
+    uartParamsGPS.readReturnMode = UART_RETURN_FULL;
+    uartParamsGPS.readEcho = UART_ECHO_OFF;
+    uartParamsGPS.baudRate = 9600;
+
+	uartGPS = UART_open(Board_UART_GPS, &uartParamsGPS);
+	if (uartGPS == NULL) {
+		System_abort("Error opening the UART_GPS");
+	}
+	doryUARTinit();
+
+    while (1) {
 
     	while(!doryUARTtask())
     	{
@@ -136,8 +171,6 @@ Void echoFxn(UArg arg0, UArg arg1)
 
     }
 }
-
-
 
 /*
  *  ======== main ========

@@ -20,7 +20,11 @@ int last_char[5];
 
 void doryUARTinit()
 {
-	//WDTCTL = WDTPW + WDTHOLD;                 // Stop WDT
+	UCA0IE |= UCRXIE;                         // Enable USCI_A0 RX interrupt
+
+	/*
+	 *
+	 * //WDTCTL = WDTPW + WDTHOLD;                 // Stop WDT
 	  P3SEL = BIT3+BIT4;                        // P3.4,5 = USCI_A0 TXD/RXD
 	  UCA0CTL1 |= UCSWRST;                      // **Put state machine in reset**
 	  UCA0CTL1 |= UCSSEL_2;                     // SMCLK
@@ -34,6 +38,8 @@ void doryUARTinit()
 	  //__bis_SR_register(LPM0_bits + GIE);       // Enter LPM0, interrupts enabled
 	  __bis_SR_register(GIE);       // Enter LPM0, interrupts enabled
 	  __no_operation();                         // For debugger
+
+	  */
 }
 
 
@@ -77,6 +83,6 @@ char doryUARTtask()
 		System_printf("UART flag set");
 		flag=0;
 	}
-	UCA0IE |= UCRXIE;                         // Enable USCI_A0 RX interrupt
+
 	return returnvalue;
 }
