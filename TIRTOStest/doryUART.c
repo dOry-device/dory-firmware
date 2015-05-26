@@ -21,7 +21,7 @@ int last_char[5];
 void doryUARTinit()
 {
 	//WDTCTL = WDTPW + WDTHOLD;                 // Stop WDT
-	  //P3SEL = BIT3+BIT4;                        // P3.4,5 = USCI_A0 TXD/RXD
+	  P3SEL = BIT3+BIT4;                        // P3.4,5 = USCI_A0 TXD/RXD
 	  UCA0CTL1 |= UCSWRST;                      // **Put state machine in reset**
 	  UCA0CTL1 |= UCSSEL_2;                     // SMCLK
 	  UCA0BR0 = 6;                              // 1MHz 9600 (see User's Guide)
@@ -45,7 +45,7 @@ Void doryUARTfxn(UArg argument)
 	  case 0:break;                             // Vector 0 - no interrupt
 	  case 2:                                   // Vector 2 - RXIFG
 		 a[line][col] = UCA0RXBUF;                  // read RXed character
-		 if (a[line][col] == LINE_FEED)
+		 if (a[line][col] == LINE_FEED || col>98)
 		 {
 			 last_char[line]=col;
 			 if(line<4)

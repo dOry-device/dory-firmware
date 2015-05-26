@@ -116,18 +116,15 @@ Void echoFxn(UArg arg0, UArg arg1)
     while (1) {
     	/*UART_read(uart, &input, 1);
 
-    	UART_close(uart);
+    	UART_close(uart);*/
     	uart = UART_open(Board_UART_GPS, &uartParams);
 
     	if (uart == NULL) {
     		System_abort("Error opening the UART_GPS");
     	}
-    	UART_write(uart, &input, 1);
-
-    	int i=0;
 
     	UART_read(uart, &output, 1);
-    	UART_close(uart);
+    	UART_close(uart);/*
 
     	uart = UART_open(Board_UART0, &uartParams);
 
@@ -136,10 +133,10 @@ Void echoFxn(UArg arg0, UArg arg1)
     	}
 
     	//output = input;
-    	UART_write(uart, &input,1);*/
+    	UART_write(uart, &input,1);
 
 
-    	doryUARTtask();
+    	doryUARTtask();*/
     	Task_sleep((unsigned int)200);
     }
 }
@@ -158,7 +155,7 @@ int main(void)
     // Board_initSDSPI();
     // Board_initSPI();
     Board_initUART();
-    doryUARTinit();
+    // doryUARTinit();
     // Board_initUSB(Board_USBDEVICE);
     // Board_initWatchdog();
     // Board_initWiFi();

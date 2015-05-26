@@ -1,8 +1,51 @@
 
-**** Build of configuration Debug for project UartA0test ****
+**** Build of configuration Debug for project TIRTOStest ****
 
 /home/vagrant/ti/ccsv6/utils/bin/gmake -k all 
-gmake: Nothing to be done for `all'.
+making ../src/sysbios/sysbios.ae430X ...
+gmake[1]: Entering directory `/home/vagrant/dory-firmware/TIRTOStest/src/sysbios'
+gmake[1]: Nothing to be done for `all'.
+gmake[1]: Leaving directory `/home/vagrant/dory-firmware/TIRTOStest/src/sysbios'
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project TIRTOStest ****
+
+/home/vagrant/ti/ccsv6/utils/bin/gmake -k all 
+making ../src/sysbios/sysbios.ae430X ...
+gmake[1]: Entering directory `/home/vagrant/dory-firmware/TIRTOStest/src/sysbios'
+gmake[1]: Nothing to be done for `all'.
+gmake[1]: Leaving directory `/home/vagrant/dory-firmware/TIRTOStest/src/sysbios'
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project TIRTOStest ****
+
+/home/vagrant/ti/ccsv6/utils/bin/gmake -k all 
+making ../src/sysbios/sysbios.ae430X ...
+gmake[1]: Entering directory `/home/vagrant/dory-firmware/TIRTOStest/src/sysbios'
+gmake[1]: Nothing to be done for `all'.
+gmake[1]: Leaving directory `/home/vagrant/dory-firmware/TIRTOStest/src/sysbios'
+Building file: ../doryUART.c
+Invoking: MSP430 Compiler
+"/home/vagrant/ti/ccsv6/tools/compiler/ti-cgt-msp430_4.4.3/bin/cl430" -vmspx --abi=eabi --data_model=restricted --use_hw_mpy=F5 --include_path="/home/vagrant/ti/ccsv6/ccs_base/msp430/include" --include_path="/home/vagrant/ti/ccsv6/tools/compiler/ti-cgt-msp430_4.4.3/include" --include_path="/home/vagrant/ti/tirtos_msp43x_2_12_00_24/products/MSPWare_2_00_00_40a/driverlib/MSP430F5xx_6xx" --advice:power=all -g --define=__MSP430F5529__ --define=MSP430WARE --define=ccs --diag_warning=225 --display_error_number --diag_wrap=off --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --printf_support=minimal --preproc_with_compile --preproc_dependency="doryUART.pp" --cmd_file="./configPkg/compiler.opt"  "../doryUART.c"
+"../doryUART.c", line 47: remark #2553-D: (ULP 14.1) Array index (involving "col") of type "int". Recommend using "unsigned int"
+"../doryUART.c", line 47: remark #2553-D: (ULP 14.1) Array index (involving "line") of type "int". Recommend using "unsigned int"
+"../doryUART.c", line 48: remark #2553-D: (ULP 14.1) Array index (involving "col") of type "int". Recommend using "unsigned int"
+"../doryUART.c", line 48: remark #2553-D: (ULP 14.1) Array index (involving "line") of type "int". Recommend using "unsigned int"
+"../doryUART.c", line 50: remark #2553-D: (ULP 14.1) Array index (involving "line") of type "int". Recommend using "unsigned int"
+Finished building: ../doryUART.c
+ 
+Building target: TIRTOStest.out
+Invoking: MSP430 Linker
+"/home/vagrant/ti/ccsv6/tools/compiler/ti-cgt-msp430_4.4.3/bin/cl430" -vmspx --abi=eabi --data_model=restricted --use_hw_mpy=F5 --advice:power=all -g --define=__MSP430F5529__ --define=MSP430WARE --define=ccs --diag_warning=225 --display_error_number --diag_wrap=off --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --printf_support=minimal -z -m"TIRTOStest.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"/home/vagrant/ti/ccsv6/ccs_base/msp430/include" -i"/home/vagrant/ti/ccsv6/tools/compiler/ti-cgt-msp430_4.4.3/lib" -i"/home/vagrant/ti/ccsv6/tools/compiler/ti-cgt-msp430_4.4.3/include" -i"/home/vagrant/ti/ccsv6/ccs_base/msp430/lib/5xx_6xx_FRxx" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="TIRTOStest_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "TIRTOStest.out" "./MSP_EXP430F5529LP.obj" "./doryI2C.obj" "./doryUART.obj" "./empty_min.obj" "../MSP_EXP430F5529LP.cmd" -l"./configPkg/linker.cmd"  -l"libmath.a" -l"libc.a" -l"/home/vagrant/ti/tirtos_msp43x_2_12_00_24/products/MSPWare_2_00_00_40a/driverlib/ccs-MSP430F5529/ccs-MSP430F5529.lib" 
+<Linking>
+remark #10372-D: (ULP 4.1) Detected uninitialized Port A in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port B in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port C in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port D in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+Finished building target: TIRTOStest.out
+ 
 
 **** Build Finished ****
 
@@ -30,13 +73,71 @@ Invoking: MSP430 Compiler
 "../doryUART.c", line 50: remark #2553-D: (ULP 14.1) Array index (involving "line") of type "int". Recommend using "unsigned int"
 Finished building: ../doryUART.c
  
+Building target: TIRTOStest.out
+Invoking: MSP430 Linker
+"/home/vagrant/ti/ccsv6/tools/compiler/ti-cgt-msp430_4.4.3/bin/cl430" -vmspx --abi=eabi --data_model=restricted --use_hw_mpy=F5 --advice:power=all -g --define=__MSP430F5529__ --define=MSP430WARE --define=ccs --diag_warning=225 --display_error_number --diag_wrap=off --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --printf_support=minimal -z -m"TIRTOStest.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"/home/vagrant/ti/ccsv6/ccs_base/msp430/include" -i"/home/vagrant/ti/ccsv6/tools/compiler/ti-cgt-msp430_4.4.3/lib" -i"/home/vagrant/ti/ccsv6/tools/compiler/ti-cgt-msp430_4.4.3/include" -i"/home/vagrant/ti/ccsv6/ccs_base/msp430/lib/5xx_6xx_FRxx" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="TIRTOStest_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "TIRTOStest.out" "./MSP_EXP430F5529LP.obj" "./doryI2C.obj" "./doryUART.obj" "./empty_min.obj" "../MSP_EXP430F5529LP.cmd" -l"./configPkg/linker.cmd"  -l"libmath.a" -l"libc.a" -l"/home/vagrant/ti/tirtos_msp43x_2_12_00_24/products/MSPWare_2_00_00_40a/driverlib/ccs-MSP430F5529/ccs-MSP430F5529.lib" 
+<Linking>
+remark #10372-D: (ULP 4.1) Detected uninitialized Port A in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port B in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port C in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port D in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+Finished building target: TIRTOStest.out
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project UartA0test ****
+
+/home/vagrant/ti/ccsv6/utils/bin/gmake -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project TIRTOStest ****
+
+/home/vagrant/ti/ccsv6/utils/bin/gmake -k all 
+making ../src/sysbios/sysbios.ae430X ...
+gmake[1]: Entering directory `/home/vagrant/dory-firmware/TIRTOStest/src/sysbios'
+gmake[1]: Nothing to be done for `all'.
+gmake[1]: Leaving directory `/home/vagrant/dory-firmware/TIRTOStest/src/sysbios'
+Building file: ../MSP_EXP430F5529LP.c
+Invoking: MSP430 Compiler
+"/home/vagrant/ti/ccsv6/tools/compiler/ti-cgt-msp430_4.4.3/bin/cl430" -vmspx --abi=eabi --data_model=restricted --use_hw_mpy=F5 --include_path="/home/vagrant/ti/ccsv6/ccs_base/msp430/include" --include_path="/home/vagrant/ti/ccsv6/tools/compiler/ti-cgt-msp430_4.4.3/include" --include_path="/home/vagrant/ti/tirtos_msp43x_2_12_00_24/products/MSPWare_2_00_00_40a/driverlib/MSP430F5xx_6xx" --advice:power=all -g --define=__MSP430F5529__ --define=MSP430WARE --define=ccs --diag_warning=225 --display_error_number --diag_wrap=off --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --printf_support=minimal --preproc_with_compile --preproc_dependency="MSP_EXP430F5529LP.pp" --cmd_file="./configPkg/compiler.opt"  "../MSP_EXP430F5529LP.c"
+"../MSP_EXP430F5529LP.c", line 108: remark #1535-D: (ULP 8.1) variable "gpioPinConfigs" is used as a constant. Recommend declaring variable as either 'static const' or 'const'
+Finished building: ../MSP_EXP430F5529LP.c
+ 
+Building target: TIRTOStest.out
+Invoking: MSP430 Linker
+"/home/vagrant/ti/ccsv6/tools/compiler/ti-cgt-msp430_4.4.3/bin/cl430" -vmspx --abi=eabi --data_model=restricted --use_hw_mpy=F5 --advice:power=all -g --define=__MSP430F5529__ --define=MSP430WARE --define=ccs --diag_warning=225 --display_error_number --diag_wrap=off --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --printf_support=minimal -z -m"TIRTOStest.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"/home/vagrant/ti/ccsv6/ccs_base/msp430/include" -i"/home/vagrant/ti/ccsv6/tools/compiler/ti-cgt-msp430_4.4.3/lib" -i"/home/vagrant/ti/ccsv6/tools/compiler/ti-cgt-msp430_4.4.3/include" -i"/home/vagrant/ti/ccsv6/ccs_base/msp430/lib/5xx_6xx_FRxx" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="TIRTOStest_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "TIRTOStest.out" "./MSP_EXP430F5529LP.obj" "./doryI2C.obj" "./doryUART.obj" "./empty_min.obj" "../MSP_EXP430F5529LP.cmd" -l"./configPkg/linker.cmd"  -l"libmath.a" -l"libc.a" -l"/home/vagrant/ti/tirtos_msp43x_2_12_00_24/products/MSPWare_2_00_00_40a/driverlib/ccs-MSP430F5529/ccs-MSP430F5529.lib" 
+<Linking>
+remark #10372-D: (ULP 4.1) Detected uninitialized Port A in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port B in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port C in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port D in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+Finished building target: TIRTOStest.out
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project UartA0test ****
+
+/home/vagrant/ti/ccsv6/utils/bin/gmake -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project TIRTOStest ****
+
+/home/vagrant/ti/ccsv6/utils/bin/gmake -k all 
+making ../src/sysbios/sysbios.ae430X ...
+gmake[1]: Entering directory `/home/vagrant/dory-firmware/TIRTOStest/src/sysbios'
+gmake[1]: Nothing to be done for `all'.
+gmake[1]: Leaving directory `/home/vagrant/dory-firmware/TIRTOStest/src/sysbios'
 Building file: ../empty_min.c
 Invoking: MSP430 Compiler
 "/home/vagrant/ti/ccsv6/tools/compiler/ti-cgt-msp430_4.4.3/bin/cl430" -vmspx --abi=eabi --data_model=restricted --use_hw_mpy=F5 --include_path="/home/vagrant/ti/ccsv6/ccs_base/msp430/include" --include_path="/home/vagrant/ti/ccsv6/tools/compiler/ti-cgt-msp430_4.4.3/include" --include_path="/home/vagrant/ti/tirtos_msp43x_2_12_00_24/products/MSPWare_2_00_00_40a/driverlib/MSP430F5xx_6xx" --advice:power=all -g --define=__MSP430F5529__ --define=MSP430WARE --define=ccs --diag_warning=225 --display_error_number --diag_wrap=off --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --printf_support=minimal --preproc_with_compile --preproc_dependency="empty_min.pp" --cmd_file="./configPkg/compiler.opt"  "../empty_min.c"
 "../empty_min.c", line 115: warning #9-D: nested comment is not allowed
 "../empty_min.c", line 93: warning #179-D: variable "input" was declared but never referenced
-"../empty_min.c", line 94: warning #179-D: variable "output" was declared but never referenced
-"../empty_min.c", line 95: warning #179-D: variable "uart" was declared but never referenced
 "../empty_min.c", line 97: warning #179-D: variable "echoPrompt" was declared but never referenced
 "../empty_min.c", line 103: remark #1546-D: (ULP 15.1) Detected consecutive bitfield assigns. Recommend using bit mask instead
 "../empty_min.c", line 104: remark #1546-D: (ULP 15.1) Detected consecutive bitfield assigns. Recommend using bit mask instead
@@ -71,103 +172,5 @@ making ../src/sysbios/sysbios.ae430X ...
 gmake[1]: Entering directory `/home/vagrant/dory-firmware/TIRTOStest/src/sysbios'
 gmake[1]: Nothing to be done for `all'.
 gmake[1]: Leaving directory `/home/vagrant/dory-firmware/TIRTOStest/src/sysbios'
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project TIRTOStest ****
-
-/home/vagrant/ti/ccsv6/utils/bin/gmake -k all 
-making ../src/sysbios/sysbios.ae430X ...
-gmake[1]: Entering directory `/home/vagrant/dory-firmware/TIRTOStest/src/sysbios'
-gmake[1]: Nothing to be done for `all'.
-gmake[1]: Leaving directory `/home/vagrant/dory-firmware/TIRTOStest/src/sysbios'
-Building file: ../doryUART.c
-Invoking: MSP430 Compiler
-"/home/vagrant/ti/ccsv6/tools/compiler/ti-cgt-msp430_4.4.3/bin/cl430" -vmspx --abi=eabi --data_model=restricted --use_hw_mpy=F5 --include_path="/home/vagrant/ti/ccsv6/ccs_base/msp430/include" --include_path="/home/vagrant/ti/ccsv6/tools/compiler/ti-cgt-msp430_4.4.3/include" --include_path="/home/vagrant/ti/tirtos_msp43x_2_12_00_24/products/MSPWare_2_00_00_40a/driverlib/MSP430F5xx_6xx" --advice:power=all -g --define=__MSP430F5529__ --define=MSP430WARE --define=ccs --diag_warning=225 --display_error_number --diag_wrap=off --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --printf_support=minimal --preproc_with_compile --preproc_dependency="doryUART.pp" --cmd_file="./configPkg/compiler.opt"  "../doryUART.c"
-"../doryUART.c", line 47: remark #2553-D: (ULP 14.1) Array index (involving "col") of type "int". Recommend using "unsigned int"
-"../doryUART.c", line 47: remark #2553-D: (ULP 14.1) Array index (involving "line") of type "int". Recommend using "unsigned int"
-"../doryUART.c", line 48: remark #2553-D: (ULP 14.1) Array index (involving "col") of type "int". Recommend using "unsigned int"
-"../doryUART.c", line 48: remark #2553-D: (ULP 14.1) Array index (involving "line") of type "int". Recommend using "unsigned int"
-"../doryUART.c", line 50: remark #2553-D: (ULP 14.1) Array index (involving "line") of type "int". Recommend using "unsigned int"
-Finished building: ../doryUART.c
- 
-Building file: ../empty_min.c
-Invoking: MSP430 Compiler
-"/home/vagrant/ti/ccsv6/tools/compiler/ti-cgt-msp430_4.4.3/bin/cl430" -vmspx --abi=eabi --data_model=restricted --use_hw_mpy=F5 --include_path="/home/vagrant/ti/ccsv6/ccs_base/msp430/include" --include_path="/home/vagrant/ti/ccsv6/tools/compiler/ti-cgt-msp430_4.4.3/include" --include_path="/home/vagrant/ti/tirtos_msp43x_2_12_00_24/products/MSPWare_2_00_00_40a/driverlib/MSP430F5xx_6xx" --advice:power=all -g --define=__MSP430F5529__ --define=MSP430WARE --define=ccs --diag_warning=225 --display_error_number --diag_wrap=off --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --printf_support=minimal --preproc_with_compile --preproc_dependency="empty_min.pp" --cmd_file="./configPkg/compiler.opt"  "../empty_min.c"
-"../empty_min.c", line 115: warning #9-D: nested comment is not allowed
-"../empty_min.c", line 93: warning #179-D: variable "input" was declared but never referenced
-"../empty_min.c", line 94: warning #179-D: variable "output" was declared but never referenced
-"../empty_min.c", line 95: warning #179-D: variable "uart" was declared but never referenced
-"../empty_min.c", line 97: warning #179-D: variable "echoPrompt" was declared but never referenced
-"../empty_min.c", line 103: remark #1546-D: (ULP 15.1) Detected consecutive bitfield assigns. Recommend using bit mask instead
-"../empty_min.c", line 104: remark #1546-D: (ULP 15.1) Detected consecutive bitfield assigns. Recommend using bit mask instead
-"../empty_min.c", line 105: remark #1546-D: (ULP 15.1) Detected consecutive bitfield assigns. Recommend using bit mask instead
-"../empty_min.c", line 106: remark #1546-D: (ULP 15.1) Detected consecutive bitfield assigns. Recommend using bit mask instead
-Finished building: ../empty_min.c
- 
-Building target: TIRTOStest.out
-Invoking: MSP430 Linker
-"/home/vagrant/ti/ccsv6/tools/compiler/ti-cgt-msp430_4.4.3/bin/cl430" -vmspx --abi=eabi --data_model=restricted --use_hw_mpy=F5 --advice:power=all -g --define=__MSP430F5529__ --define=MSP430WARE --define=ccs --diag_warning=225 --display_error_number --diag_wrap=off --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --printf_support=minimal -z -m"TIRTOStest.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"/home/vagrant/ti/ccsv6/ccs_base/msp430/include" -i"/home/vagrant/ti/ccsv6/tools/compiler/ti-cgt-msp430_4.4.3/lib" -i"/home/vagrant/ti/ccsv6/tools/compiler/ti-cgt-msp430_4.4.3/include" -i"/home/vagrant/ti/ccsv6/ccs_base/msp430/lib/5xx_6xx_FRxx" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="TIRTOStest_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "TIRTOStest.out" "./MSP_EXP430F5529LP.obj" "./doryI2C.obj" "./doryUART.obj" "./empty_min.obj" "../MSP_EXP430F5529LP.cmd" -l"./configPkg/linker.cmd"  -l"libmath.a" -l"libc.a" -l"/home/vagrant/ti/tirtos_msp43x_2_12_00_24/products/MSPWare_2_00_00_40a/driverlib/ccs-MSP430F5529/ccs-MSP430F5529.lib" 
-<Linking>
-remark #10372-D: (ULP 4.1) Detected uninitialized Port A in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
-remark #10372-D: (ULP 4.1) Detected uninitialized Port B in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
-remark #10372-D: (ULP 4.1) Detected uninitialized Port C in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
-remark #10372-D: (ULP 4.1) Detected uninitialized Port D in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
-Finished building target: TIRTOStest.out
- 
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project UartA0test ****
-
-/home/vagrant/ti/ccsv6/utils/bin/gmake -k all 
-gmake: Nothing to be done for `all'.
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project TIRTOStest ****
-
-/home/vagrant/ti/ccsv6/utils/bin/gmake -k all 
-making ../src/sysbios/sysbios.ae430X ...
-gmake[1]: Entering directory `/home/vagrant/dory-firmware/TIRTOStest/src/sysbios'
-gmake[1]: Nothing to be done for `all'.
-gmake[1]: Leaving directory `/home/vagrant/dory-firmware/TIRTOStest/src/sysbios'
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project TIRTOStest ****
-
-/home/vagrant/ti/ccsv6/utils/bin/gmake -k all 
-making ../src/sysbios/sysbios.ae430X ...
-gmake[1]: Entering directory `/home/vagrant/dory-firmware/TIRTOStest/src/sysbios'
-gmake[1]: Nothing to be done for `all'.
-gmake[1]: Leaving directory `/home/vagrant/dory-firmware/TIRTOStest/src/sysbios'
-Building file: ../doryUART.c
-Invoking: MSP430 Compiler
-"/home/vagrant/ti/ccsv6/tools/compiler/ti-cgt-msp430_4.4.3/bin/cl430" -vmspx --abi=eabi --data_model=restricted --use_hw_mpy=F5 --include_path="/home/vagrant/ti/ccsv6/ccs_base/msp430/include" --include_path="/home/vagrant/ti/ccsv6/tools/compiler/ti-cgt-msp430_4.4.3/include" --include_path="/home/vagrant/ti/tirtos_msp43x_2_12_00_24/products/MSPWare_2_00_00_40a/driverlib/MSP430F5xx_6xx" --advice:power=all -g --define=__MSP430F5529__ --define=MSP430WARE --define=ccs --diag_warning=225 --display_error_number --diag_wrap=off --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --printf_support=minimal --preproc_with_compile --preproc_dependency="doryUART.pp" --cmd_file="./configPkg/compiler.opt"  "../doryUART.c"
-"../doryUART.c", line 47: remark #2553-D: (ULP 14.1) Array index (involving "col") of type "int". Recommend using "unsigned int"
-"../doryUART.c", line 47: remark #2553-D: (ULP 14.1) Array index (involving "line") of type "int". Recommend using "unsigned int"
-"../doryUART.c", line 48: remark #2553-D: (ULP 14.1) Array index (involving "col") of type "int". Recommend using "unsigned int"
-"../doryUART.c", line 48: remark #2553-D: (ULP 14.1) Array index (involving "line") of type "int". Recommend using "unsigned int"
-"../doryUART.c", line 50: remark #2553-D: (ULP 14.1) Array index (involving "line") of type "int". Recommend using "unsigned int"
-Finished building: ../doryUART.c
- 
-Building target: TIRTOStest.out
-Invoking: MSP430 Linker
-"/home/vagrant/ti/ccsv6/tools/compiler/ti-cgt-msp430_4.4.3/bin/cl430" -vmspx --abi=eabi --data_model=restricted --use_hw_mpy=F5 --advice:power=all -g --define=__MSP430F5529__ --define=MSP430WARE --define=ccs --diag_warning=225 --display_error_number --diag_wrap=off --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --printf_support=minimal -z -m"TIRTOStest.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"/home/vagrant/ti/ccsv6/ccs_base/msp430/include" -i"/home/vagrant/ti/ccsv6/tools/compiler/ti-cgt-msp430_4.4.3/lib" -i"/home/vagrant/ti/ccsv6/tools/compiler/ti-cgt-msp430_4.4.3/include" -i"/home/vagrant/ti/ccsv6/ccs_base/msp430/lib/5xx_6xx_FRxx" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="TIRTOStest_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "TIRTOStest.out" "./MSP_EXP430F5529LP.obj" "./doryI2C.obj" "./doryUART.obj" "./empty_min.obj" "../MSP_EXP430F5529LP.cmd" -l"./configPkg/linker.cmd"  -l"libmath.a" -l"libc.a" -l"/home/vagrant/ti/tirtos_msp43x_2_12_00_24/products/MSPWare_2_00_00_40a/driverlib/ccs-MSP430F5529/ccs-MSP430F5529.lib" 
-<Linking>
-remark #10372-D: (ULP 4.1) Detected uninitialized Port A in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
-remark #10372-D: (ULP 4.1) Detected uninitialized Port B in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
-remark #10372-D: (ULP 4.1) Detected uninitialized Port C in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
-remark #10372-D: (ULP 4.1) Detected uninitialized Port D in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
-Finished building target: TIRTOStest.out
- 
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project UartA0test ****
-
-/home/vagrant/ti/ccsv6/utils/bin/gmake -k all 
-gmake: Nothing to be done for `all'.
 
 **** Build Finished ****
