@@ -10,7 +10,6 @@
 void doryI2C_init() {
 	I2C_Params_init(&params);
 	params.transferMode = I2C_MODE_BLOCKING;
-	//TODO: change to callback (?)
 
 	i2c_handle = I2C_open(Board_I2C0, &params);
 	if(!i2c_handle)
@@ -80,8 +79,6 @@ void doryI2C_getTemperature() {
 		System_flush();
 	}
 }
-
-
 
 void doryI2C_close()
 {

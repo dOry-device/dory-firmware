@@ -34,6 +34,8 @@
 #ifndef 	DISPLAY_HARDWARE_DRIVCE_H_INCLUDED_
 #define 	DISPLAY_HARDWARE_DRIVCE_H_INCLUDED_
 
+#define USE_DORY_PINS 1
+
 #include "conf_EPD.h"
 
 #define	_BV(bit)   (1 << (bit)) /**< left shift 1 bit */
@@ -68,32 +70,57 @@
 #define Temper_PIN              BIT6
 #define Temper_PORT             P6       /**< LaunchPad P6.6 */
 #define	Temper_PORT_SEL	       (SEL (Temper_PORT))
-#define SPICLK_PIN              BIT2
-#define SPICLK_PORT             P3       /**< LaunchPad P3.2 */
 #define EPD_BUSY_PIN            BIT7
 #define EPD_BUSY_PORT           P2       /**< LaunchPad P2.7  */
-#define PWM_PIN                 BIT2
-#define PWM_PORT                P4       /**< LaunchPad P4.2  */
-#define EPD_RST_PIN             BIT1
-#define EPD_RST_PORT            P4       /**< LaunchPad P4.1 */
+	#ifdef USE_DORY_PINS
+	#define SPICLK_PIN              BIT0
+	#define SPICLK_PORT             P4       /**< LaunchPad P3.2 */
+	#define PWM_PIN                 BIT2
+	#define PWM_PORT                P7       /**< LaunchPad P4.2  */
+	#define EPD_RST_PIN             BIT1
+	#define EPD_RST_PORT            P7       /**< LaunchPad P4.1 */
+	#else
+	#define SPICLK_PIN              BIT2
+	#define SPICLK_PORT             P3       /**< LaunchPad P3.2 */
+	#define PWM_PIN                 BIT2
+	#define PWM_PORT                P4       /**< LaunchPad P4.2  */
+	#define EPD_RST_PIN             BIT1
+	#define EPD_RST_PORT            P4       /**< LaunchPad P4.1 */
+	#endif
 #define EPD_PANELON_PIN         BIT1
 #define EPD_PANELON_PORT        P8       /**< LaunchPad P8.1  */
 #define EPD_DISCHARGE_PIN       BIT3
 #define EPD_DISCHARGE_PORT      P2       /**< LaunchPad P2.3  */
 #define EPD_BORDER_PIN          BIT6
 #define EPD_BORDER_PORT         P2       /**< LaunchPad P2.6  */
-#define SPIMISO_PIN             BIT1
-#define SPIMISO_PORT            P3       /**< LaunchPad P3.1  */
-#define SPIMOSI_PIN             BIT0
-#define SPIMOSI_PORT            P3       /**< LaunchPad P3.0  */
-#define Flash_CS_PIN            BIT2
-#define Flash_CS_PORT           P2       /**< LaunchPad P2.2  */
-#define	Flash_CS_PORT_SEL	    (SEL (Flash_CS_PORT))
-#define	Flash_CS_PORT_SEL2		(SEL2(Flash_CS_PORT))
-#define EPD_CS_PIN              BIT0
-#define EPD_CS_PORT             P2       /**< LaunchPad P2.0  */
-#define	CS_PORT_SEL		        (SEL (EPD_CS_PORT))
-#define	CS_PORT_SEL2		    (SEL2(EPD_CS_PORT))
+
+#ifdef USE_DORY_PINS
+	#define SPIMISO_PIN             BIT2
+	#define SPIMISO_PORT            P4       /**< LaunchPad P3.1  */
+	#define SPIMOSI_PIN             BIT1
+	#define SPIMOSI_PORT            P4       /**< LaunchPad P3.0  */
+	#define Flash_CS_PIN            BIT0
+	#define Flash_CS_PORT           P6       /**< LaunchPad P2.2  */
+	#define	Flash_CS_PORT_SEL	    (SEL (Flash_CS_PORT))
+	#define	Flash_CS_PORT_SEL2		(SEL2(Flash_CS_PORT))
+	#define EPD_CS_PIN              BIT5
+	#define EPD_CS_PORT             P6       /**< LaunchPad P2.0  */
+	#define	CS_PORT_SEL		        (SEL (EPD_CS_PORT))
+	#define	CS_PORT_SEL2		    (SEL2(EPD_CS_PORT))
+#else
+	#define SPIMISO_PIN             BIT1
+	#define SPIMISO_PORT            P3       /**< LaunchPad P3.1  */
+	#define SPIMOSI_PIN             BIT0
+	#define SPIMOSI_PORT            P3       /**< LaunchPad P3.0  */
+	#define Flash_CS_PIN            BIT2
+	#define Flash_CS_PORT           P2       /**< LaunchPad P2.2  */
+	#define	Flash_CS_PORT_SEL	    (SEL (Flash_CS_PORT))
+	#define	Flash_CS_PORT_SEL2		(SEL2(Flash_CS_PORT))
+	#define EPD_CS_PIN              BIT0
+	#define EPD_CS_PORT             P2       /**< LaunchPad P2.0  */
+	#define	CS_PORT_SEL		        (SEL (EPD_CS_PORT))
+	#define	CS_PORT_SEL2		    (SEL2(EPD_CS_PORT))
+#endif
 
 #elif(defined __MSP430G2553__)
 
@@ -153,20 +180,37 @@
 
 #if (defined __MSP430F5529__)
 /**SPI Defines ****************************************************************/
-#define SMCLK_FREQ			(25000000)
-#define SPISEL              P3SEL
-#define SPICTL0				UCB0CTL0
-#define SPICTL1				UCB0CTL1
-#define SPIBR0				UCB0BR0
-#define SPIBR1				UCB0BR1
-#define SPIIFG				UCB0IFG
-#define SPIRXBUF			UCB0RXBUF
-#define SPIRXIFG			UCB0RXIFG
-#define SPITXBUF			UCB0TXBUF
-#define SPITXIFG			UCTXIFG
-#define SPISTAT				UCB0STAT
-#define SPIBUSY             UCBUSY
-#define SPI_baudrate        (SMCLK_FREQ/COG_SPI_baudrate)           /**< the baud rate of SPI */
+#ifdef USE_DORY_PINS
+	#define SMCLK_FREQ			(25000000)
+	#define SPISEL              P4SEL
+	#define SPICTL0				UCB1CTL0
+	#define SPICTL1				UCB1CTL1
+	#define SPIBR0				UCB1BR0
+	#define SPIBR1				UCB1BR1
+	#define SPIIFG				UCB1IFG
+	#define SPIRXBUF			UCB1RXBUF
+	#define SPIRXIFG			UCB1RXIFG
+	#define SPITXBUF			UCB1TXBUF
+	#define SPITXIFG			UCTXIFG
+	#define SPISTAT				UCB1STAT
+	#define SPIBUSY             UCBUSY
+	#define SPI_baudrate        (SMCLK_FREQ/COG_SPI_baudrate)           /**< the baud rate of SPI */
+#else
+	#define SMCLK_FREQ			(25000000)
+	#define SPISEL              P3SEL
+	#define SPICTL0				UCB0CTL0
+	#define SPICTL1				UCB0CTL1
+	#define SPIBR0				UCB0BR0
+	#define SPIBR1				UCB0BR1
+	#define SPIIFG				UCB0IFG
+	#define SPIRXBUF			UCB0RXBUF
+	#define SPIRXIFG			UCB0RXIFG
+	#define SPITXBUF			UCB0TXBUF
+	#define SPITXIFG			UCTXIFG
+	#define SPISTAT				UCB0STAT
+	#define SPIBUSY             UCBUSY
+	#define SPI_baudrate        (SMCLK_FREQ/COG_SPI_baudrate)           /**< the baud rate of SPI */
+#endif
 /**ADC Defines ****************************************************************/
 #define ADCCTL0         ADC12CTL0
 #define ADCENC          ADC12ENC

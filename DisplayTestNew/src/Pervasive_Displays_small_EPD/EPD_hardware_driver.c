@@ -523,8 +523,8 @@ void EPD_initialize_gpio(void) {
 	config_gpio_dir_i( Temper_PORT,Temper_PIN);
     BITSET(Temper_PORT_SEL,Temper_PIN);  // Enable A/D channel A0
 
-    P4SEL &= ~BIT7;
-    P4DIR |= BIT7; //blinking led
+    P2SEL &= ~BIT0;
+    P2DIR |= BIT0; //blinking led
 #elif(defined __MSP430G2553__)
     config_gpio_dir_i( EPD_BUSY_PORT,EPD_BUSY_PIN);
     //Set Xin to GPIO

@@ -106,7 +106,7 @@ Void echoFxn(UArg arg0, UArg arg1)
     uartParams.baudRate = 9600;
 
 
-    /* Loop forever echoing */
+    /* Loop forever echoing
     uart = UART_open(Board_UART0, &uartParams);
 	if (uart == NULL) {
 			System_abort("Error opening the UART");
@@ -116,7 +116,7 @@ Void echoFxn(UArg arg0, UArg arg1)
 	if (uart == NULL) {
 		System_abort("Error opening the UART_GPS");
 	}
-*/
+
     while (1) {
 
     	UART_write(uart, echoPrompt, sizeof(echoPrompt));
@@ -131,9 +131,8 @@ Void echoFxn(UArg arg0, UArg arg1)
     	{
     		Task_sleep((unsigned int)200);
     	}
-*/
 
-    }
+    }*/
 }
 
 /*
@@ -161,12 +160,25 @@ Void gpsTaskFxn(UArg arg0, UArg arg1)
 	}
 	doryUARTinit();
 
+	int iuart;
+
     while (1) {
 
-    	while(!doryUARTtask())
+    /*	while(!doryUARTtask())
     	{
-    		Task_sleep((unsigned int)200);
+    		Task_sleep((unsigned int)50);
     	}
+     */
+
+    	Task_sleep((unsigned int)2000);
+
+    	//for(iuart=0;iuart<400;iuart++)
+    	//{
+    		System_printf(a);
+    		System_flush();
+    	//}
+    	System_printf("\n");
+    	System_flush();
 
 
     }

@@ -95,7 +95,7 @@ extern void delay_ms(unsigned int ms);
  * - Configure the option here to assign which COG+FPL driving waveform will be used.
  * - Options are G2_Aurora_Ma, G1_Aurora_Mb and G2_Aurora_Mb
  * - How to identify the COG and FPL type of your EPD, visit http://www.pervasivedisplays.com/products/label_info */
-#define G1_Aurora_Mb
+#define G2_Aurora_Mb
 
 #define D_PartialUpdate_StageTime     480  //ms
 

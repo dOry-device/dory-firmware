@@ -11,7 +11,6 @@
 #include <ti/drivers/I2C.h>
 #include <xdc/runtime/System.h>
 
-
 I2C_Handle	i2c_handle;
 I2C_Params	params;
 I2C_Transaction i2cTransaction;

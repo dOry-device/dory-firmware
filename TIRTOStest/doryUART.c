@@ -10,7 +10,7 @@
 #include <msp430.h>
 //#include "Board.h"
 
-char a[5][100];
+
 char flag=0;
 int col=0;
 int line=0;
@@ -50,7 +50,7 @@ Void doryUARTfxn(UArg argument)
 	  {
 	  case 0:break;                             // Vector 0 - no interrupt
 	  case 2:                                   // Vector 2 - RXIFG
-		 a[line][col] = UCA0RXBUF;                  // read RXed character
+		/* a[line][col] = UCA0RXBUF;                  // read RXed character
 		 if (a[line][col] == LINE_FEED || col>98)
 		 {
 			 last_char[line]=col;
@@ -61,14 +61,25 @@ Void doryUARTfxn(UArg argument)
 			 else
 			 {
 				 line=0;
-				 flag=1;
+				// flag=1;
 			 }
 			 col=0;
 		 }
 		 else
 		 {
 			 col++;
-		 }
+		 }*/
+
+		  a[line] = UCA0RXBUF;
+		  if(UCA0RXBUF == LINE_FEED || line > 398)
+		  {
+		  	 line=0;
+		  }
+		  else
+		  {
+			  line++;
+		  }
+
 	    break;
 	  case 4:break;                             // Vector 4 - TXIFG
 	  default: break;
@@ -80,7 +91,6 @@ char doryUARTtask()
 	char returnvalue=flag;
 	if(flag)
 	{
-		System_printf("UART flag set");
 		flag=0;
 	}
 

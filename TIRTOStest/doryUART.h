@@ -17,6 +17,8 @@
 #define CARRIAGE_RETURN 0x0A
 #define LINE_FEED 0x0D
 
+
+char a[400];
 void doryUARTinit();
 Void doryUARTfxn(UArg argument);
 char doryUARTtask();

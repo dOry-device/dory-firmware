@@ -99,7 +99,7 @@ int main(void) {
 		/* The interval of two images alternatively change is 5 seconds */
 		delay_ms(5000);
 
-		P4OUT |= BIT7;
+		P2OUT |= BIT0;
 
 #if(USE_EPD_Type==EPD_144)
 		EPD_display_from_pointer(EPD_144,(uint8_t *)&image_array_144_1,(uint8_t *)&image_array_144_2);
@@ -122,7 +122,7 @@ int main(void) {
 		/* The interval of two images alternatively change is 5 seconds */
 		delay_ms(5000);
 
-		P4OUT &= ~BIT7;
+		P2OUT &= ~BIT0;
 	}
 #endif
 }
