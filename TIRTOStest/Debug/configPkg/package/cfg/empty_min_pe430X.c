@@ -790,7 +790,7 @@ ti_sysbios_BIOS_Module_State__ ti_sysbios_BIOS_Module__state__V;
  */
 
 /* Object__table__V */
-ti_sysbios_family_msp430_Hwi_Object__ ti_sysbios_family_msp430_Hwi_Object__table__V[4];
+ti_sysbios_family_msp430_Hwi_Object__ ti_sysbios_family_msp430_Hwi_Object__table__V[5];
 
 /* Module_State__ */
 typedef struct ti_sysbios_family_msp430_Hwi_Module_State__ {
@@ -857,7 +857,7 @@ ti_sysbios_gates_GateMutex_Object__ ti_sysbios_gates_GateMutex_Object__table__V[
  */
 
 /* Object__table__V */
-ti_sysbios_hal_Hwi_Object__ ti_sysbios_hal_Hwi_Object__table__V[3];
+ti_sysbios_hal_Hwi_Object__ ti_sysbios_hal_Hwi_Object__table__V[4];
 
 
 /*
@@ -2306,7 +2306,7 @@ __FAR__ const ti_sysbios_family_msp430_Hwi_Params ti_sysbios_family_msp430_Hwi_O
 };
 
 /* Object__table__V */
-ti_sysbios_family_msp430_Hwi_Object__ ti_sysbios_family_msp430_Hwi_Object__table__V[4] = {
+ti_sysbios_family_msp430_Hwi_Object__ ti_sysbios_family_msp430_Hwi_Object__table__V[5] = {
     {/* instance#0 */
         0,
         (xdc_Int)0x35,  /* intNum */
@@ -2328,6 +2328,12 @@ ti_sysbios_family_msp430_Hwi_Object__ ti_sysbios_family_msp430_Hwi_Object__table
     {/* instance#3 */
         0,
         (xdc_Int)0x38,  /* intNum */
+        ((xdc_UArg)0),  /* irp */
+        ((void*)0),  /* hookEnv */
+    },
+    {/* instance#4 */
+        0,
+        (xdc_Int)0x2f,  /* intNum */
         ((xdc_UArg)0),  /* irp */
         ((void*)0),  /* hookEnv */
     },
@@ -2405,7 +2411,7 @@ __FAR__ const CT__ti_sysbios_family_msp430_Hwi_Module__startupDoneFxn ti_sysbios
 
 /* Object__count__C */
 #pragma DATA_SECTION(ti_sysbios_family_msp430_Hwi_Object__count__C, ".const:ti_sysbios_family_msp430_Hwi_Object__count__C");
-__FAR__ const CT__ti_sysbios_family_msp430_Hwi_Object__count ti_sysbios_family_msp430_Hwi_Object__count__C = 4;
+__FAR__ const CT__ti_sysbios_family_msp430_Hwi_Object__count ti_sysbios_family_msp430_Hwi_Object__count__C = 5;
 
 /* Object__heap__C */
 #pragma DATA_SECTION(ti_sysbios_family_msp430_Hwi_Object__heap__C, ".const:ti_sysbios_family_msp430_Hwi_Object__heap__C");
@@ -3082,7 +3088,7 @@ __FAR__ const ti_sysbios_hal_Hwi_Params ti_sysbios_hal_Hwi_Object__PARAMS__C = {
 };
 
 /* Object__table__V */
-ti_sysbios_hal_Hwi_Object__ ti_sysbios_hal_Hwi_Object__table__V[3] = {
+ti_sysbios_hal_Hwi_Object__ ti_sysbios_hal_Hwi_Object__table__V[4] = {
     {/* instance#0 */
         0,
         (ti_sysbios_hal_Hwi_HwiProxy_Handle)&ti_sysbios_family_msp430_Hwi_Object__table__V[1],  /* pi */
@@ -3094,6 +3100,10 @@ ti_sysbios_hal_Hwi_Object__ ti_sysbios_hal_Hwi_Object__table__V[3] = {
     {/* instance#2 */
         0,
         (ti_sysbios_hal_Hwi_HwiProxy_Handle)&ti_sysbios_family_msp430_Hwi_Object__table__V[3],  /* pi */
+    },
+    {/* instance#3 */
+        0,
+        (ti_sysbios_hal_Hwi_HwiProxy_Handle)&ti_sysbios_family_msp430_Hwi_Object__table__V[4],  /* pi */
     },
 };
 
@@ -3155,7 +3165,7 @@ __FAR__ const CT__ti_sysbios_hal_Hwi_Module__startupDoneFxn ti_sysbios_hal_Hwi_M
 
 /* Object__count__C */
 #pragma DATA_SECTION(ti_sysbios_hal_Hwi_Object__count__C, ".const:ti_sysbios_hal_Hwi_Object__count__C");
-__FAR__ const CT__ti_sysbios_hal_Hwi_Object__count ti_sysbios_hal_Hwi_Object__count__C = 3;
+__FAR__ const CT__ti_sysbios_hal_Hwi_Object__count ti_sysbios_hal_Hwi_Object__count__C = 4;
 
 /* Object__heap__C */
 #pragma DATA_SECTION(ti_sysbios_hal_Hwi_Object__heap__C, ".const:ti_sysbios_hal_Hwi_Object__heap__C");

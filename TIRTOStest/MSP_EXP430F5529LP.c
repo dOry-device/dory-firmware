@@ -57,6 +57,9 @@
 
 #include <ti/drivers/SPI.h>
 
+#include "doryGPIO.h" //needed for button ISR
+
+
 const SPI_Config SPI_config[];
 /*
  *  =============================== General ===============================
@@ -107,16 +110,20 @@ Void MSP_EXP430F5529LP_isrDMA(UArg arg)
  */
 GPIO_PinConfig gpioPinConfigs[] = {
     /* Input pins */
-    /* MSP_EXP430F5529LP_S1 */
-    GPIOMSP430_P2_1 | GPIO_CFG_IN_PU | GPIO_CFG_IN_INT_RISING,
-    /* MSP_EXP430F5529LP_S2 */
-    GPIOMSP430_P1_1 | GPIO_CFG_IN_PU | GPIO_CFG_IN_INT_RISING,
+    /* BTN0 */
+    GPIOMSP430_P1_0 | GPIO_CFG_IN_PU | GPIO_CFG_IN_INT_FALLING,
+    /* BTN1 */
+    GPIOMSP430_P1_1 | GPIO_CFG_IN_PU | GPIO_CFG_IN_INT_FALLING,
+    /* BTN2 */
+    GPIOMSP430_P1_2 | GPIO_CFG_IN_PU | GPIO_CFG_IN_INT_FALLING,
+    /* BTN3 */
+    GPIOMSP430_P1_3 | GPIO_CFG_IN_PU | GPIO_CFG_IN_INT_FALLING,
 
     /* Output pins */
+    /* MSP_EXP430F5529LP_LED0 */
+    GPIOMSP430_P2_0 | GPIO_CFG_OUT_STD | GPIO_CFG_OUT_STR_HIGH | GPIO_CFG_OUT_LOW,
     /* MSP_EXP430F5529LP_LED1 */
-    GPIOMSP430_P1_0 | GPIO_CFG_OUT_STD | GPIO_CFG_OUT_STR_HIGH | GPIO_CFG_OUT_LOW,
-    /* MSP_EXP430F5529LP_LED2 */
-    GPIOMSP430_P4_7 | GPIO_CFG_OUT_STD | GPIO_CFG_OUT_STR_HIGH | GPIO_CFG_OUT_LOW,
+    GPIOMSP430_P2_1 | GPIO_CFG_OUT_STD | GPIO_CFG_OUT_STR_HIGH | GPIO_CFG_OUT_LOW,
 };
 
 /*
@@ -127,8 +134,10 @@ GPIO_PinConfig gpioPinConfigs[] = {
  *       reduce memory usage (if placed at end of gpioPinConfigs array).
  */
 GPIO_CallbackFxn gpioCallbackFunctions[] = {
-    NULL,  /* MSP_EXP430F5529LP_S1 */
-    NULL   /* MSP_EXP430F5529LP_S2 */
+//	btn0_isr,  /* BTN0 */
+//	btn1_isr,  /* BTN1 */
+//	btn2_isr,  /* BTN2 */
+//	btn3_isr  /* BTN3 */
 };
 
 /* The device-specific GPIO_config structure */

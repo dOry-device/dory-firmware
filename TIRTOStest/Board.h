@@ -51,11 +51,12 @@ extern "C" {
 
 #define Board_LED_ON                MSP_EXP430F5529LP_LED_ON
 #define Board_LED_OFF               MSP_EXP430F5529LP_LED_OFF
-#define Board_LED0                  MSP_EXP430F5529LP_LED1
-#define Board_LED1                  MSP_EXP430F5529LP_LED2
-#define Board_LED2                  MSP_EXP430F5529LP_LED2
-#define Board_BUTTON0               MSP_EXP430F5529LP_S1
-#define Board_BUTTON1               MSP_EXP430F5529LP_S2
+#define Board_LED0                  dory_LED0
+#define Board_LED1                  dory_LED1
+#define Board_BUTTON0               dory_BTN0
+#define Board_BUTTON1               dory_BTN1
+#define Board_BUTTON2               dory_BTN2
+#define Board_BUTTON3               dory_BTN3
 
 #define Board_I2C0                  MSP_EXP430F5529LP_I2CB0
 #define Board_I2C_TMP               MSP_EXP430F5529LP_I2CB0

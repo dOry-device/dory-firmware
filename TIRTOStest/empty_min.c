@@ -54,6 +54,7 @@
 #include "Board.h"
 #include "doryI2C.h"
 #include "doryUART.h"
+#include "doryGPIO.h"
 
 
 
@@ -200,8 +201,11 @@ int main(void)
     // Board_initWatchdog();
     // Board_initWiFi();
 
+
+    dory_GPIO_init();
     /* Turn on user LED  */
     GPIO_write(Board_LED0, Board_LED_ON);
+
 
     System_printf("hoil\n");
     System_flush();

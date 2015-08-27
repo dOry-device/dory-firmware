@@ -11,18 +11,21 @@ CFG_SRCS += \
 
 C_SRCS += \
 ../MSP_EXP430F5529LP.c \
+../doryGPIO.c \
 ../doryI2C.c \
 ../doryUART.c \
 ../empty_min.c 
 
 OBJS += \
 ./MSP_EXP430F5529LP.obj \
+./doryGPIO.obj \
 ./doryI2C.obj \
 ./doryUART.obj \
 ./empty_min.obj 
 
 C_DEPS += \
 ./MSP_EXP430F5529LP.pp \
+./doryGPIO.pp \
 ./doryI2C.pp \
 ./doryUART.pp \
 ./empty_min.pp 
@@ -49,18 +52,21 @@ GEN_MISC_DIRS__QUOTED += \
 
 C_DEPS__QUOTED += \
 "MSP_EXP430F5529LP.pp" \
+"doryGPIO.pp" \
 "doryI2C.pp" \
 "doryUART.pp" \
 "empty_min.pp" 
 
 OBJS__QUOTED += \
 "MSP_EXP430F5529LP.obj" \
+"doryGPIO.obj" \
 "doryI2C.obj" \
 "doryUART.obj" \
 "empty_min.obj" 
 
 C_SRCS__QUOTED += \
 "../MSP_EXP430F5529LP.c" \
+"../doryGPIO.c" \
 "../doryI2C.c" \
 "../doryUART.c" \
 "../empty_min.c" 

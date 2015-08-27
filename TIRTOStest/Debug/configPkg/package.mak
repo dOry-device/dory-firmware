@@ -15,94 +15,94 @@ XDCCFGDIR = package/cfg/
 # in the event that some included BOM script changes.
 #
 ifneq (clean,$(MAKECMDGOALS))
-/home/vagrant/ti/xdctools_3_31_00_24_core/packages/xdc/utils.js:
-package.mak: /home/vagrant/ti/xdctools_3_31_00_24_core/packages/xdc/utils.js
-/home/vagrant/ti/xdctools_3_31_00_24_core/packages/xdc/xdc.tci:
-package.mak: /home/vagrant/ti/xdctools_3_31_00_24_core/packages/xdc/xdc.tci
-/home/vagrant/ti/xdctools_3_31_00_24_core/packages/xdc/template.xs:
-package.mak: /home/vagrant/ti/xdctools_3_31_00_24_core/packages/xdc/template.xs
-/home/vagrant/ti/xdctools_3_31_00_24_core/packages/xdc/om2.xs:
-package.mak: /home/vagrant/ti/xdctools_3_31_00_24_core/packages/xdc/om2.xs
-/home/vagrant/ti/xdctools_3_31_00_24_core/packages/xdc/xmlgen.xs:
-package.mak: /home/vagrant/ti/xdctools_3_31_00_24_core/packages/xdc/xmlgen.xs
-/home/vagrant/ti/xdctools_3_31_00_24_core/packages/xdc/xmlgen2.xs:
-package.mak: /home/vagrant/ti/xdctools_3_31_00_24_core/packages/xdc/xmlgen2.xs
-/home/vagrant/ti/xdctools_3_31_00_24_core/packages/xdc/Warnings.xs:
-package.mak: /home/vagrant/ti/xdctools_3_31_00_24_core/packages/xdc/Warnings.xs
-/home/vagrant/ti/xdctools_3_31_00_24_core/packages/xdc/IPackage.xs:
-package.mak: /home/vagrant/ti/xdctools_3_31_00_24_core/packages/xdc/IPackage.xs
-/home/vagrant/ti/xdctools_3_31_00_24_core/packages/xdc/package.xs:
-package.mak: /home/vagrant/ti/xdctools_3_31_00_24_core/packages/xdc/package.xs
-/home/vagrant/ti/xdctools_3_31_00_24_core/packages/xdc/services/global/Clock.xs:
-package.mak: /home/vagrant/ti/xdctools_3_31_00_24_core/packages/xdc/services/global/Clock.xs
-/home/vagrant/ti/xdctools_3_31_00_24_core/packages/xdc/services/global/Trace.xs:
-package.mak: /home/vagrant/ti/xdctools_3_31_00_24_core/packages/xdc/services/global/Trace.xs
-/home/vagrant/ti/xdctools_3_31_00_24_core/packages/xdc/bld/bld.js:
-package.mak: /home/vagrant/ti/xdctools_3_31_00_24_core/packages/xdc/bld/bld.js
-/home/vagrant/ti/xdctools_3_31_00_24_core/packages/xdc/bld/BuildEnvironment.xs:
-package.mak: /home/vagrant/ti/xdctools_3_31_00_24_core/packages/xdc/bld/BuildEnvironment.xs
-/home/vagrant/ti/xdctools_3_31_00_24_core/packages/xdc/bld/PackageContents.xs:
-package.mak: /home/vagrant/ti/xdctools_3_31_00_24_core/packages/xdc/bld/PackageContents.xs
-/home/vagrant/ti/xdctools_3_31_00_24_core/packages/xdc/bld/_gen.xs:
-package.mak: /home/vagrant/ti/xdctools_3_31_00_24_core/packages/xdc/bld/_gen.xs
-/home/vagrant/ti/xdctools_3_31_00_24_core/packages/xdc/bld/Library.xs:
-package.mak: /home/vagrant/ti/xdctools_3_31_00_24_core/packages/xdc/bld/Library.xs
-/home/vagrant/ti/xdctools_3_31_00_24_core/packages/xdc/bld/Executable.xs:
-package.mak: /home/vagrant/ti/xdctools_3_31_00_24_core/packages/xdc/bld/Executable.xs
-/home/vagrant/ti/xdctools_3_31_00_24_core/packages/xdc/bld/Repository.xs:
-package.mak: /home/vagrant/ti/xdctools_3_31_00_24_core/packages/xdc/bld/Repository.xs
-/home/vagrant/ti/xdctools_3_31_00_24_core/packages/xdc/bld/Configuration.xs:
-package.mak: /home/vagrant/ti/xdctools_3_31_00_24_core/packages/xdc/bld/Configuration.xs
-/home/vagrant/ti/xdctools_3_31_00_24_core/packages/xdc/bld/Script.xs:
-package.mak: /home/vagrant/ti/xdctools_3_31_00_24_core/packages/xdc/bld/Script.xs
-/home/vagrant/ti/xdctools_3_31_00_24_core/packages/xdc/bld/Manifest.xs:
-package.mak: /home/vagrant/ti/xdctools_3_31_00_24_core/packages/xdc/bld/Manifest.xs
-/home/vagrant/ti/xdctools_3_31_00_24_core/packages/xdc/bld/Utils.xs:
-package.mak: /home/vagrant/ti/xdctools_3_31_00_24_core/packages/xdc/bld/Utils.xs
-/home/vagrant/ti/xdctools_3_31_00_24_core/packages/xdc/bld/ITarget.xs:
-package.mak: /home/vagrant/ti/xdctools_3_31_00_24_core/packages/xdc/bld/ITarget.xs
-/home/vagrant/ti/xdctools_3_31_00_24_core/packages/xdc/bld/ITarget2.xs:
-package.mak: /home/vagrant/ti/xdctools_3_31_00_24_core/packages/xdc/bld/ITarget2.xs
-/home/vagrant/ti/xdctools_3_31_00_24_core/packages/xdc/bld/ITarget3.xs:
-package.mak: /home/vagrant/ti/xdctools_3_31_00_24_core/packages/xdc/bld/ITarget3.xs
-/home/vagrant/ti/xdctools_3_31_00_24_core/packages/xdc/bld/ITargetFilter.xs:
-package.mak: /home/vagrant/ti/xdctools_3_31_00_24_core/packages/xdc/bld/ITargetFilter.xs
-/home/vagrant/ti/xdctools_3_31_00_24_core/packages/xdc/bld/package.xs:
-package.mak: /home/vagrant/ti/xdctools_3_31_00_24_core/packages/xdc/bld/package.xs
+/home/vagrant/ccs/xdctools_3_31_00_24_core/packages/xdc/utils.js:
+package.mak: /home/vagrant/ccs/xdctools_3_31_00_24_core/packages/xdc/utils.js
+/home/vagrant/ccs/xdctools_3_31_00_24_core/packages/xdc/xdc.tci:
+package.mak: /home/vagrant/ccs/xdctools_3_31_00_24_core/packages/xdc/xdc.tci
+/home/vagrant/ccs/xdctools_3_31_00_24_core/packages/xdc/template.xs:
+package.mak: /home/vagrant/ccs/xdctools_3_31_00_24_core/packages/xdc/template.xs
+/home/vagrant/ccs/xdctools_3_31_00_24_core/packages/xdc/om2.xs:
+package.mak: /home/vagrant/ccs/xdctools_3_31_00_24_core/packages/xdc/om2.xs
+/home/vagrant/ccs/xdctools_3_31_00_24_core/packages/xdc/xmlgen.xs:
+package.mak: /home/vagrant/ccs/xdctools_3_31_00_24_core/packages/xdc/xmlgen.xs
+/home/vagrant/ccs/xdctools_3_31_00_24_core/packages/xdc/xmlgen2.xs:
+package.mak: /home/vagrant/ccs/xdctools_3_31_00_24_core/packages/xdc/xmlgen2.xs
+/home/vagrant/ccs/xdctools_3_31_00_24_core/packages/xdc/Warnings.xs:
+package.mak: /home/vagrant/ccs/xdctools_3_31_00_24_core/packages/xdc/Warnings.xs
+/home/vagrant/ccs/xdctools_3_31_00_24_core/packages/xdc/IPackage.xs:
+package.mak: /home/vagrant/ccs/xdctools_3_31_00_24_core/packages/xdc/IPackage.xs
+/home/vagrant/ccs/xdctools_3_31_00_24_core/packages/xdc/package.xs:
+package.mak: /home/vagrant/ccs/xdctools_3_31_00_24_core/packages/xdc/package.xs
+/home/vagrant/ccs/xdctools_3_31_00_24_core/packages/xdc/services/global/Clock.xs:
+package.mak: /home/vagrant/ccs/xdctools_3_31_00_24_core/packages/xdc/services/global/Clock.xs
+/home/vagrant/ccs/xdctools_3_31_00_24_core/packages/xdc/services/global/Trace.xs:
+package.mak: /home/vagrant/ccs/xdctools_3_31_00_24_core/packages/xdc/services/global/Trace.xs
+/home/vagrant/ccs/xdctools_3_31_00_24_core/packages/xdc/bld/bld.js:
+package.mak: /home/vagrant/ccs/xdctools_3_31_00_24_core/packages/xdc/bld/bld.js
+/home/vagrant/ccs/xdctools_3_31_00_24_core/packages/xdc/bld/BuildEnvironment.xs:
+package.mak: /home/vagrant/ccs/xdctools_3_31_00_24_core/packages/xdc/bld/BuildEnvironment.xs
+/home/vagrant/ccs/xdctools_3_31_00_24_core/packages/xdc/bld/PackageContents.xs:
+package.mak: /home/vagrant/ccs/xdctools_3_31_00_24_core/packages/xdc/bld/PackageContents.xs
+/home/vagrant/ccs/xdctools_3_31_00_24_core/packages/xdc/bld/_gen.xs:
+package.mak: /home/vagrant/ccs/xdctools_3_31_00_24_core/packages/xdc/bld/_gen.xs
+/home/vagrant/ccs/xdctools_3_31_00_24_core/packages/xdc/bld/Library.xs:
+package.mak: /home/vagrant/ccs/xdctools_3_31_00_24_core/packages/xdc/bld/Library.xs
+/home/vagrant/ccs/xdctools_3_31_00_24_core/packages/xdc/bld/Executable.xs:
+package.mak: /home/vagrant/ccs/xdctools_3_31_00_24_core/packages/xdc/bld/Executable.xs
+/home/vagrant/ccs/xdctools_3_31_00_24_core/packages/xdc/bld/Repository.xs:
+package.mak: /home/vagrant/ccs/xdctools_3_31_00_24_core/packages/xdc/bld/Repository.xs
+/home/vagrant/ccs/xdctools_3_31_00_24_core/packages/xdc/bld/Configuration.xs:
+package.mak: /home/vagrant/ccs/xdctools_3_31_00_24_core/packages/xdc/bld/Configuration.xs
+/home/vagrant/ccs/xdctools_3_31_00_24_core/packages/xdc/bld/Script.xs:
+package.mak: /home/vagrant/ccs/xdctools_3_31_00_24_core/packages/xdc/bld/Script.xs
+/home/vagrant/ccs/xdctools_3_31_00_24_core/packages/xdc/bld/Manifest.xs:
+package.mak: /home/vagrant/ccs/xdctools_3_31_00_24_core/packages/xdc/bld/Manifest.xs
+/home/vagrant/ccs/xdctools_3_31_00_24_core/packages/xdc/bld/Utils.xs:
+package.mak: /home/vagrant/ccs/xdctools_3_31_00_24_core/packages/xdc/bld/Utils.xs
+/home/vagrant/ccs/xdctools_3_31_00_24_core/packages/xdc/bld/ITarget.xs:
+package.mak: /home/vagrant/ccs/xdctools_3_31_00_24_core/packages/xdc/bld/ITarget.xs
+/home/vagrant/ccs/xdctools_3_31_00_24_core/packages/xdc/bld/ITarget2.xs:
+package.mak: /home/vagrant/ccs/xdctools_3_31_00_24_core/packages/xdc/bld/ITarget2.xs
+/home/vagrant/ccs/xdctools_3_31_00_24_core/packages/xdc/bld/ITarget3.xs:
+package.mak: /home/vagrant/ccs/xdctools_3_31_00_24_core/packages/xdc/bld/ITarget3.xs
+/home/vagrant/ccs/xdctools_3_31_00_24_core/packages/xdc/bld/ITargetFilter.xs:
+package.mak: /home/vagrant/ccs/xdctools_3_31_00_24_core/packages/xdc/bld/ITargetFilter.xs
+/home/vagrant/ccs/xdctools_3_31_00_24_core/packages/xdc/bld/package.xs:
+package.mak: /home/vagrant/ccs/xdctools_3_31_00_24_core/packages/xdc/bld/package.xs
 package.mak: config.bld
-/home/vagrant/ti/tirtos_msp43x_2_12_00_24/products/bios_6_41_03_51/packages/ti/targets/ITarget.xs:
-package.mak: /home/vagrant/ti/tirtos_msp43x_2_12_00_24/products/bios_6_41_03_51/packages/ti/targets/ITarget.xs
-/home/vagrant/ti/tirtos_msp43x_2_12_00_24/products/bios_6_41_03_51/packages/ti/targets/C28_large.xs:
-package.mak: /home/vagrant/ti/tirtos_msp43x_2_12_00_24/products/bios_6_41_03_51/packages/ti/targets/C28_large.xs
-/home/vagrant/ti/tirtos_msp43x_2_12_00_24/products/bios_6_41_03_51/packages/ti/targets/C28_float.xs:
-package.mak: /home/vagrant/ti/tirtos_msp43x_2_12_00_24/products/bios_6_41_03_51/packages/ti/targets/C28_float.xs
-/home/vagrant/ti/tirtos_msp43x_2_12_00_24/products/bios_6_41_03_51/packages/ti/targets/package.xs:
-package.mak: /home/vagrant/ti/tirtos_msp43x_2_12_00_24/products/bios_6_41_03_51/packages/ti/targets/package.xs
-/home/vagrant/ti/tirtos_msp43x_2_12_00_24/products/bios_6_41_03_51/packages/ti/targets/msp430/elf/MSP430.xs:
-package.mak: /home/vagrant/ti/tirtos_msp43x_2_12_00_24/products/bios_6_41_03_51/packages/ti/targets/msp430/elf/MSP430.xs
-/home/vagrant/ti/tirtos_msp43x_2_12_00_24/products/bios_6_41_03_51/packages/ti/targets/msp430/elf/MSP430X.xs:
-package.mak: /home/vagrant/ti/tirtos_msp43x_2_12_00_24/products/bios_6_41_03_51/packages/ti/targets/msp430/elf/MSP430X.xs
-/home/vagrant/ti/tirtos_msp43x_2_12_00_24/products/bios_6_41_03_51/packages/ti/targets/msp430/elf/MSP430X_small.xs:
-package.mak: /home/vagrant/ti/tirtos_msp43x_2_12_00_24/products/bios_6_41_03_51/packages/ti/targets/msp430/elf/MSP430X_small.xs
-/home/vagrant/ti/tirtos_msp43x_2_12_00_24/products/bios_6_41_03_51/packages/ti/targets/msp430/elf/package.xs:
-package.mak: /home/vagrant/ti/tirtos_msp43x_2_12_00_24/products/bios_6_41_03_51/packages/ti/targets/msp430/elf/package.xs
+/home/vagrant/ccs/tirtos_msp43x_2_12_01_33/products/bios_6_41_04_54/packages/ti/targets/ITarget.xs:
+package.mak: /home/vagrant/ccs/tirtos_msp43x_2_12_01_33/products/bios_6_41_04_54/packages/ti/targets/ITarget.xs
+/home/vagrant/ccs/tirtos_msp43x_2_12_01_33/products/bios_6_41_04_54/packages/ti/targets/C28_large.xs:
+package.mak: /home/vagrant/ccs/tirtos_msp43x_2_12_01_33/products/bios_6_41_04_54/packages/ti/targets/C28_large.xs
+/home/vagrant/ccs/tirtos_msp43x_2_12_01_33/products/bios_6_41_04_54/packages/ti/targets/C28_float.xs:
+package.mak: /home/vagrant/ccs/tirtos_msp43x_2_12_01_33/products/bios_6_41_04_54/packages/ti/targets/C28_float.xs
+/home/vagrant/ccs/tirtos_msp43x_2_12_01_33/products/bios_6_41_04_54/packages/ti/targets/package.xs:
+package.mak: /home/vagrant/ccs/tirtos_msp43x_2_12_01_33/products/bios_6_41_04_54/packages/ti/targets/package.xs
+/home/vagrant/ccs/tirtos_msp43x_2_12_01_33/products/bios_6_41_04_54/packages/ti/targets/msp430/elf/MSP430.xs:
+package.mak: /home/vagrant/ccs/tirtos_msp43x_2_12_01_33/products/bios_6_41_04_54/packages/ti/targets/msp430/elf/MSP430.xs
+/home/vagrant/ccs/tirtos_msp43x_2_12_01_33/products/bios_6_41_04_54/packages/ti/targets/msp430/elf/MSP430X.xs:
+package.mak: /home/vagrant/ccs/tirtos_msp43x_2_12_01_33/products/bios_6_41_04_54/packages/ti/targets/msp430/elf/MSP430X.xs
+/home/vagrant/ccs/tirtos_msp43x_2_12_01_33/products/bios_6_41_04_54/packages/ti/targets/msp430/elf/MSP430X_small.xs:
+package.mak: /home/vagrant/ccs/tirtos_msp43x_2_12_01_33/products/bios_6_41_04_54/packages/ti/targets/msp430/elf/MSP430X_small.xs
+/home/vagrant/ccs/tirtos_msp43x_2_12_01_33/products/bios_6_41_04_54/packages/ti/targets/msp430/elf/package.xs:
+package.mak: /home/vagrant/ccs/tirtos_msp43x_2_12_01_33/products/bios_6_41_04_54/packages/ti/targets/msp430/elf/package.xs
 package.mak: package.bld
-/home/vagrant/ti/xdctools_3_31_00_24_core/packages/xdc/tools/configuro/template/compiler.opt.xdt:
-package.mak: /home/vagrant/ti/xdctools_3_31_00_24_core/packages/xdc/tools/configuro/template/compiler.opt.xdt
-/home/vagrant/ti/xdctools_3_31_00_24_core/packages/xdc/services/io/File.xs:
-package.mak: /home/vagrant/ti/xdctools_3_31_00_24_core/packages/xdc/services/io/File.xs
-/home/vagrant/ti/xdctools_3_31_00_24_core/packages/xdc/services/io/package.xs:
-package.mak: /home/vagrant/ti/xdctools_3_31_00_24_core/packages/xdc/services/io/package.xs
-/home/vagrant/ti/xdctools_3_31_00_24_core/packages/xdc/tools/configuro/template/compiler.defs.xdt:
-package.mak: /home/vagrant/ti/xdctools_3_31_00_24_core/packages/xdc/tools/configuro/template/compiler.defs.xdt
-/home/vagrant/ti/xdctools_3_31_00_24_core/packages/xdc/tools/configuro/template/custom.mak.exe.xdt:
-package.mak: /home/vagrant/ti/xdctools_3_31_00_24_core/packages/xdc/tools/configuro/template/custom.mak.exe.xdt
-/home/vagrant/ti/xdctools_3_31_00_24_core/packages/xdc/tools/configuro/template/package.xs.xdt:
-package.mak: /home/vagrant/ti/xdctools_3_31_00_24_core/packages/xdc/tools/configuro/template/package.xs.xdt
+/home/vagrant/ccs/xdctools_3_31_00_24_core/packages/xdc/tools/configuro/template/compiler.opt.xdt:
+package.mak: /home/vagrant/ccs/xdctools_3_31_00_24_core/packages/xdc/tools/configuro/template/compiler.opt.xdt
+/home/vagrant/ccs/xdctools_3_31_00_24_core/packages/xdc/services/io/File.xs:
+package.mak: /home/vagrant/ccs/xdctools_3_31_00_24_core/packages/xdc/services/io/File.xs
+/home/vagrant/ccs/xdctools_3_31_00_24_core/packages/xdc/services/io/package.xs:
+package.mak: /home/vagrant/ccs/xdctools_3_31_00_24_core/packages/xdc/services/io/package.xs
+/home/vagrant/ccs/xdctools_3_31_00_24_core/packages/xdc/tools/configuro/template/compiler.defs.xdt:
+package.mak: /home/vagrant/ccs/xdctools_3_31_00_24_core/packages/xdc/tools/configuro/template/compiler.defs.xdt
+/home/vagrant/ccs/xdctools_3_31_00_24_core/packages/xdc/tools/configuro/template/custom.mak.exe.xdt:
+package.mak: /home/vagrant/ccs/xdctools_3_31_00_24_core/packages/xdc/tools/configuro/template/custom.mak.exe.xdt
+/home/vagrant/ccs/xdctools_3_31_00_24_core/packages/xdc/tools/configuro/template/package.xs.xdt:
+package.mak: /home/vagrant/ccs/xdctools_3_31_00_24_core/packages/xdc/tools/configuro/template/package.xs.xdt
 endif
 
-ti.targets.msp430.elf.MSP430X.rootDir ?= /home/vagrant/ti/ccsv6/tools/compiler/ti-cgt-msp430_4.4.3
-ti.targets.msp430.elf.packageBase ?= /home/vagrant/ti/tirtos_msp43x_2_12_00_24/products/bios_6_41_03_51/packages/ti/targets/msp430/elf/
+ti.targets.msp430.elf.MSP430X.rootDir ?= /home/vagrant/ccs/ccsv6/tools/compiler/ti-cgt-msp430_4.4.3
+ti.targets.msp430.elf.packageBase ?= /home/vagrant/ccs/tirtos_msp43x_2_12_01_33/products/bios_6_41_04_54/packages/ti/targets/msp430/elf/
 .PRECIOUS: $(XDCCFGDIR)/%.oe430X
 .PHONY: all,e430X .dlls,e430X .executables,e430X test,e430X
 all,e430X: .executables,e430X

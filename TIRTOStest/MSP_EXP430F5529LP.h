@@ -58,10 +58,12 @@ extern "C" {
  *  @brief  Enum of GPIO names on the MSP_EXP430F5529LP dev board
  */
 typedef enum MSP_EXP430F5529LP_GPIOName {
-    MSP_EXP430F5529LP_S1 = 0,
-    MSP_EXP430F5529LP_S2,
-    MSP_EXP430F5529LP_LED1,
-    MSP_EXP430F5529LP_LED2,
+    dory_BTN0 = 0,
+    dory_BTN1,
+	dory_BTN2,
+	dory_BTN3,
+    dory_LED0,
+    dory_LED1,
 
     MSP_EXP430F5529LP_GPIOCOUNT
 } MSP_EXP430F5529LP_GPIOName;

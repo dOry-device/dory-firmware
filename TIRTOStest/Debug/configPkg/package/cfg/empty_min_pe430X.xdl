@@ -11,12 +11,12 @@
 
 
 -l"/home/vagrant/dory-firmware/TIRTOStest/Debug/configPkg/package/cfg/empty_min_pe430X.oe430X"
--l"/home/vagrant/ti/tirtos_msp43x_2_12_00_24/packages/ti/drivers/lib/drivers_MSP430F5529.ae430X"
--l"/home/vagrant/ti/tirtos_msp43x_2_12_00_24/products/bios_6_41_03_51/packages/ti/sysbios/fatfs/lib/release/ti.sysbios.fatfs.ae430X"
+-l"/home/vagrant/ccs/tirtos_msp43x_2_12_01_33/packages/ti/drivers/lib/drivers_MSP430F5529.ae430X"
+-l"/home/vagrant/ccs/tirtos_msp43x_2_12_01_33/products/bios_6_41_04_54/packages/ti/sysbios/fatfs/lib/release/ti.sysbios.fatfs.ae430X"
 -l"/home/vagrant/dory-firmware/TIRTOStest/src/sysbios/sysbios.ae430X"
--l"/home/vagrant/ti/tirtos_msp43x_2_12_00_24/products/bios_6_41_03_51/packages/ti/catalog/msp430/init/lib/ti.catalog.msp430.init.ae430X"
--l"/home/vagrant/ti/tirtos_msp43x_2_12_00_24/products/bios_6_41_03_51/packages/ti/targets/msp430/rts430/lib/ti.targets.msp430.rts430.ae430X"
--l"/home/vagrant/ti/tirtos_msp43x_2_12_00_24/products/bios_6_41_03_51/packages/ti/targets/msp430/rts430/lib/boot.ae430X"
+-l"/home/vagrant/ccs/tirtos_msp43x_2_12_01_33/products/bios_6_41_04_54/packages/ti/catalog/msp430/init/lib/ti.catalog.msp430.init.ae430X"
+-l"/home/vagrant/ccs/tirtos_msp43x_2_12_01_33/products/bios_6_41_04_54/packages/ti/targets/msp430/rts430/lib/ti.targets.msp430.rts430.ae430X"
+-l"/home/vagrant/ccs/tirtos_msp43x_2_12_01_33/products/bios_6_41_04_54/packages/ti/targets/msp430/rts430/lib/boot.ae430X"
 
 --retain="*(xdc.meta)"
 --retain="*(xdc.noload)"

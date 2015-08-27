@@ -2,10 +2,11 @@
 # Automatically-generated file. Do not edit!
 ################################################################################
 
-CG_TOOL_ROOT := /home/vagrant/ti/ccsv6/tools/compiler/ti-cgt-msp430_4.4.3
+CG_TOOL_ROOT := /home/vagrant/ccs/ccsv6/tools/compiler/ti-cgt-msp430_4.4.3
 
 ORDERED_OBJS += \
 "./MSP_EXP430F5529LP.obj" \
+"./doryGPIO.obj" \
 "./doryI2C.obj" \
 "./doryUART.obj" \
 "./empty_min.obj" \
@@ -13,7 +14,7 @@ ORDERED_OBJS += \
 $(GEN_CMDS__FLAG) \
 -l"libmath.a" \
 -l"libc.a" \
--l"/home/vagrant/ti/tirtos_msp43x_2_12_00_24/products/MSPWare_2_00_00_40a/driverlib/ccs-MSP430F5529/ccs-MSP430F5529.lib" \
+-l"/home/vagrant/ccs/tirtos_msp43x_2_12_01_33/products/MSPWare_2_00_00_40a/driverlib/ccs-MSP430F5529/ccs-MSP430F5529.lib" \
 
 -include ../makefile.init
 
@@ -136,13 +137,13 @@ all: TIRTOStest.out
 TIRTOStest.out: $(OBJS) $(CMD_SRCS) $(GEN_CMDS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: MSP430 Linker'
-	"/home/vagrant/ti/ccsv6/tools/compiler/ti-cgt-msp430_4.4.3/bin/cl430" -vmspx --abi=eabi --data_model=restricted --use_hw_mpy=F5 --advice:power=all -g --define=__MSP430F5529__ --define=MSP430WARE --define=ccs --diag_warning=225 --display_error_number --diag_wrap=off --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --printf_support=minimal -z -m"TIRTOStest.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"/home/vagrant/ti/ccsv6/ccs_base/msp430/include" -i"/home/vagrant/ti/ccsv6/tools/compiler/ti-cgt-msp430_4.4.3/lib" -i"/home/vagrant/ti/ccsv6/tools/compiler/ti-cgt-msp430_4.4.3/include" -i"/home/vagrant/ti/ccsv6/ccs_base/msp430/lib/5xx_6xx_FRxx" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="TIRTOStest_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "TIRTOStest.out" $(ORDERED_OBJS)
+	"/home/vagrant/ccs/ccsv6/tools/compiler/ti-cgt-msp430_4.4.3/bin/cl430" -vmspx --abi=eabi --data_model=restricted --use_hw_mpy=F5 --advice:power=all -g --define=__MSP430F5529__ --define=MSP430WARE --define=ccs --diag_warning=225 --display_error_number --diag_wrap=off --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --printf_support=minimal -z -m"TIRTOStest.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"/home/vagrant/ccs/ccsv6/ccs_base/msp430/include" -i"/home/vagrant/ccs/ccsv6/tools/compiler/ti-cgt-msp430_4.4.3/lib" -i"/home/vagrant/ccs/ccsv6/tools/compiler/ti-cgt-msp430_4.4.3/include" -i"/home/vagrant/ccs/ccsv6/ccs_base/msp430/lib/5xx_6xx_FRxx" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="TIRTOStest_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "TIRTOStest.out" $(ORDERED_OBJS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 
 TIRTOStest.hex: $(EXE_OUTPUTS)
 	@echo 'Invoking: MSP430 Hex Utility'
-	"/home/vagrant/ti/ccsv6/tools/compiler/ti-cgt-msp430_4.4.3/bin/hex430" --memwidth=8 --romwidth=8 -o "TIRTOStest.hex" $(EXE_OUTPUTS__QUOTED)
+	"/home/vagrant/ccs/ccsv6/tools/compiler/ti-cgt-msp430_4.4.3/bin/hex430" --memwidth=8 --romwidth=8 -o "TIRTOStest.hex" $(EXE_OUTPUTS__QUOTED)
 	@echo 'Finished building: $@'
 	@echo ' '
 
@@ -150,8 +151,8 @@ TIRTOStest.hex: $(EXE_OUTPUTS)
 clean:
 	-$(RM) $(GEN_MISC_FILES__QUOTED)$(EXE_OUTPUTS__QUOTED)$(GEN_FILES__QUOTED)$(BIN_OUTPUTS__QUOTED)$(GEN_OPTS__QUOTED)$(GEN_CMDS__QUOTED)
 	-$(RMDIR) $(GEN_MISC_DIRS__QUOTED)
-	-$(RM) "MSP_EXP430F5529LP.pp" "doryI2C.pp" "doryUART.pp" "empty_min.pp" 
-	-$(RM) "MSP_EXP430F5529LP.obj" "doryI2C.obj" "doryUART.obj" "empty_min.obj" 
+	-$(RM) "MSP_EXP430F5529LP.pp" "doryGPIO.pp" "doryI2C.pp" "doryUART.pp" "empty_min.pp" 
+	-$(RM) "MSP_EXP430F5529LP.obj" "doryGPIO.obj" "doryI2C.obj" "doryUART.obj" "empty_min.obj" 
 	-@echo 'Finished clean'
 	-@echo ' '
 
