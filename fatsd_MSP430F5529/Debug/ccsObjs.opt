@@ -1,0 +1,1 @@
+"./MSP_EXP430F5529LP.obj" "./fatsd.obj" "../MSP_EXP430F5529LP.cmd" -l"./configPkg/linker.cmd" -l"libmath.a" -l"libc.a" -l"/home/vagrant/ccs/tirtos_msp43x_2_12_01_33/products/MSPWare_2_00_00_40a/driverlib/ccs-MSP430F5529/ccs-MSP430F5529.lib" 

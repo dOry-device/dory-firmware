@@ -73,7 +73,7 @@
 #define EPD_BUSY_PIN            BIT7
 #define EPD_BUSY_PORT           P2       /**< LaunchPad P2.7  */
 	#ifdef USE_DORY_PINS
-	#define SPICLK_PIN              BIT0
+	#define SPICLK_PIN              BIT3
 	#define SPICLK_PORT             P4       /**< LaunchPad P3.2 */
 	#define PWM_PIN                 BIT2
 	#define PWM_PORT                P7       /**< LaunchPad P4.2  */
@@ -99,8 +99,8 @@
 	#define SPIMISO_PORT            P4       /**< LaunchPad P3.1  */
 	#define SPIMOSI_PIN             BIT1
 	#define SPIMOSI_PORT            P4       /**< LaunchPad P3.0  */
-	#define Flash_CS_PIN            BIT0
-	#define Flash_CS_PORT           P6       /**< LaunchPad P2.2  */
+	#define Flash_CS_PIN            BIT5
+	#define Flash_CS_PORT           P3       /**< LaunchPad P2.2  */
 	#define	Flash_CS_PORT_SEL	    (SEL (Flash_CS_PORT))
 	#define	Flash_CS_PORT_SEL2		(SEL2(Flash_CS_PORT))
 	#define EPD_CS_PIN              BIT5
