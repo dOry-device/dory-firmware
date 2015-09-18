@@ -41,6 +41,26 @@ void EPD_display_init(void) {
 }
 
 
+uint8_t reverse_byte(uint8_t b) {
+   b = (b & 0xF0) >> 4 | (b & 0x0F) << 4;
+   b = (b & 0xCC) >> 2 | (b & 0x33) << 2;
+   b = (b & 0xAA) >> 1 | (b & 0x55) << 1;
+   return b;
+}
+
+void flip_image_bytes(uint8_t *image_ptr, uint8_t *flipped_image_ptr)
+{
+	uint16_t x,y;
+	uint8_t flipped_image[5808];
+	uint8_t* tmp_flipped_ptr = (uint8_t *)&flipped_image;
+	for (y = 0; y < 176; y++) {
+		for (x = 0; x < 33; x++) {
+			*flipped_image_ptr=reverse_byte(*image_ptr);
+			image_ptr++;
+			flipped_image_ptr++;
+		}
+	}
+}
 
 
 /**

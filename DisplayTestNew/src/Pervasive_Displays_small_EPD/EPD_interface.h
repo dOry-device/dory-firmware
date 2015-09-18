@@ -34,6 +34,8 @@
 #include	"conf_EPD.h"
 
 void EPD_display_init(void);
+void flip_image_bytes(uint8_t *image_ptr, uint8_t *flipped_image_ptr);
+
 void EPD_power_init(uint8_t EPD_type_index);
 void EPD_display_from_pointer(uint8_t EPD_type_index,uint8_t *previous_image_ptr,
 	uint8_t *new_image_ptr);

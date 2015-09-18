@@ -165,38 +165,38 @@ typedef  union{
 }Uint16_Byte_t;
 /******************************************************************************/
 /** The Flash MX25 series command hex code definition */
-#define ElectronicID   0x13
+#define ElectronicID   0xBF		 // OxBF (address 00001) or 0x4B (address 00001)
 
 /** ID commands */
-#define FLASH_CMD_RDID 0x9F      //RDID (Read Identification)
-#define FLASH_CMD_RES  0xAB      //RES (Read Electronic ID)
-#define FLASH_CMD_REMS 0x90      //REMS (Read Electronic & Device ID)
+#define FLASH_CMD_RDID 0x9F      //ok RDID (Read Identification)
+#define FLASH_CMD_RES  0xAB      //ok RES (Read Electronic ID)
+#define FLASH_CMD_REMS 0x90      //ok REMS (Read Electronic & Device ID)
 
 /** Register commands */
-#define FLASH_CMD_WRSR 0x01      //WRSR (Write Status Register)
-#define FLASH_CMD_RDSR 0x05      //RDSR (Read Status Register)
+#define FLASH_CMD_WRSR 0x01      //ok WRSR (Write Status Register)
+#define FLASH_CMD_RDSR 0x05      //ok RDSR (Read Status Register)
 
 /** READ commands */
-#define FLASH_CMD_READ     0x03  //READ (1 x I/O)
-#define FLASH_CMD_FASTREAD 0x0B  //FAST READ (Fast read data)
+#define FLASH_CMD_READ     0x03  //ok READ (1 x I/O)
+#define FLASH_CMD_FASTREAD 0x0B  //ok FAST READ (Fast read data)
 
 /** Program commands */
-#define FLASH_CMD_WREN 0x06      //WREN (Write Enable)
-#define FLASH_CMD_WRDI 0x04      //WRDI (Write Disable)
-#define FLASH_CMD_PP   0x02      //PP (page program)
+#define FLASH_CMD_WREN 0x06      //ok WREN (Write Enable)
+#define FLASH_CMD_WRDI 0x04      //ok WRDI (Write Disable)
+#define FLASH_CMD_PP   0x02      //ok PP (page program)
 
 /** Erase commands */
-#define FLASH_CMD_SE 0x20        //SE (Sector Erase)
-#define FLASH_CMD_BE 0xD8        //BE (Block Erase)
-#define FLASH_CMD_CE 0x60        //CE (Chip Erase) hex code: 60 or C7
+#define FLASH_CMD_SE 0x20        //ok SE (Sector Erase)
+#define FLASH_CMD_BE 0xD8        //ok BE (Block Erase)
+#define FLASH_CMD_CE 0x60        //ok CE (Chip Erase) hex code: 60 or C7
 
 /** Mode setting commands */
-#define FLASH_CMD_DP  0xB9       //DP (Deep Power Down)
-#define FLASH_CMD_RDP 0xAB       //RDP (Release form Deep Power Down)
+#define FLASH_CMD_DP  0xB9       //not available! DP (Deep Power Down)
+#define FLASH_CMD_RDP 0xAB       //not available! RDP (Release form Deep Power Down)
 
 /** status register */
-#define FLASH_WIP_MASK  0x01
-#define FLASH_LDSO_MASK 0x02
+#define FLASH_WIP_MASK  0x01     // (write in progress)
+#define FLASH_LDSO_MASK 0x02	 //
 #define FLASH_QE_MASK   0x40
 
 uint8_t is_flash_existed(void);

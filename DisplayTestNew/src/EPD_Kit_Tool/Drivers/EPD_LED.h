@@ -37,11 +37,19 @@
 #include "conf_EPD.h"
 
 #define LED_DISABLE		1
-#define LED_Port    	P1
-#define LED_Red_Pin    	BIT0
-#define LED_Green_Pin   BIT6
-#define LED_OUT     	P1OUT
-#define LED_IN      	P1IN
+#ifdef USE_DORY_PINS
+	#define LED_Port    	P2
+	#define LED_Red_Pin    	BIT0
+	#define LED_Green_Pin   BIT1
+	#define LED_OUT     	P1OUT
+	#define LED_IN      	P1IN
+#else
+	#define LED_Port    	P1
+	#define LED_Red_Pin    	BIT0
+	#define LED_Green_Pin   BIT6
+	#define LED_OUT     	P1OUT
+	#define LED_IN      	P1IN
+#endif
 
 void LED_init(void);
 void LED_ON(void);

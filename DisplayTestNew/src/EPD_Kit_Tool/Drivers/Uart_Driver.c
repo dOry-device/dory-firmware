@@ -41,7 +41,7 @@ uint8_t tx_buf[SERIAL_TX_MAX_LEN];
  */
 void data_interface_init(receive_event_handler OnRxEventHandle) {
 	_RxEventHandle = OnRxEventHandle;
-    P4SEL |= BIT4+BIT5; // P4.4,4.5option select
+ /*   P4SEL |= BIT4+BIT5; // P4.4,4.5option select
     UCA1CTL1 |= UCSWRST;                      // **Put state machine in reset**
     UCA1CTL0 &= ~UC7BIT ; // 8 bits, no parity, 1 stop bit
     UCA1CTL0 = UCMODE_0; // UART
@@ -51,11 +51,25 @@ void data_interface_init(receive_event_handler OnRxEventHandle) {
 	UCA1MCTL =0x52;// UCBRS1 + UCBRS0; // Modulation UCBRSx =0
 	UCA1CTL1 &= ~UCSWRST; // **Initialize USCI state machine**
 	UCA1IE |= UCRXIE; // Enable USCI_A0 RX interrupt
+*/
+
+	P3SEL |= BIT4+BIT3; // P4.4,4.5option select
+	UCA0CTL1 |= UCSWRST;                      // **Put state machine in reset**
+	UCA0CTL0 &= ~UC7BIT ; // 8 bits, no parity, 1 stop bit
+	UCA0CTL0 = UCMODE_0; // UART
+	UCA0CTL1 |= UCSSEL_2;                     // SMCLK
+	UCA0BR0 =0x2c;//0xD9; // 25MHz 115200//
+	UCA0BR1 =0x0a;// 0x00; // 25MHz 115200//
+	UCA0MCTL =0x52;// UCBRS1 + UCBRS0; // Modulation UCBRSx =0
+	UCA0CTL1 &= ~UCSWRST; // **Initialize USCI state machine**
+	UCA0IE |= UCRXIE; // Enable USCI_A0 RX interrupt
+
+
 
 }
 
 void data_interface_detach(void) {
-	UCA1IE &= ~UCRXIE; //Disable USCI_A0 RX interrup
+	UCA0IE &= ~UCRXIE; //Disable USCI_A0 RX interrup
 }
 
 /** \brief Transmit data to UART
@@ -63,22 +77,22 @@ void data_interface_detach(void) {
 void data_transmit(uint8_t *s, uint8_t len) {
 
 	while (len--) {
-       while (!(UCA1IFG&UCTXIFG));
-	    UCA1TXBUF = *s++;
+       while (!(UCA0IFG&UCTXIFG));
+	    UCA0TXBUF = *s++;
 	}
 
 }
-#pragma vector=USCI_A1_VECTOR
-__interrupt void USCI_A1_ISR(void)
+#pragma vector=USCI_A0_VECTOR
+__interrupt void USCI_A0_ISR(void)
 {
   volatile unsigned int i;
 
-  switch(__even_in_range(UCA1IV,4))
+  switch(__even_in_range(UCA0IV,4))
   {
     case 0: break;                          // Vector 0 - no interrupt
     case 2:                                 // Vector 2 - RXIFG
     	if (_RxEventHandle != NULL) {
-    		_RxEventHandle((uint8_t *) &UCA1RXBUF, 1);
+    		_RxEventHandle((uint8_t *) &UCA0RXBUF, 1);
     	}
 
       break;

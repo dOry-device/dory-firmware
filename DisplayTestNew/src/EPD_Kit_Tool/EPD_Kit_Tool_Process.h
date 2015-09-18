@@ -81,10 +81,11 @@ typedef struct {
 
 void EPD_Kit_Tool_process_init(void);
 void EPD_Kit_tool_process_task(void);
-/*
+void dory_Text_demo();
+
 extern void EPD_display_partialupdate (long previous_image_address,
                                        long new_image_address,long mark_image_address,
                                        EPD_read_memory_handler On_EPD_read_flash);
-                                       */
+
 #endif /* EPD_KIT_TOO_PROCESS_H_ */
 

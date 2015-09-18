@@ -42,9 +42,9 @@
 	extern unsigned char const image_array_200_1[]; /**< use 2" image array #1 */
 	extern unsigned char const image_array_200_2[]; /**< use 2" image array #2 */
 #elif(USE_EPD_Type==EPD_270) // array size=176*33, (264/8=33)
-	extern unsigned char const image_array_270_1[]; /**< use 2.7" image array #1 */
+	extern unsigned char image_array_270_1[]; /**< use 2.7" image array #1 */
     #ifndef G2_Aurora_Ma //due to exceed the code size. When G2+AuroraMa, toggling the same image
-	    extern unsigned char const image_array_270_2[]; /**< use 2.7" image array #2 */
+	    extern unsigned char image_array_270_2[]; /**< use 2.7" image array #2 */
     #endif
 #elif(USE_EPD_Type==EPD_190) // array size=144*128
 	extern unsigned char const image_array_190_1[]; /**< use 1.9" image array #1 */

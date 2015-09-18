@@ -39,6 +39,7 @@
 
 void dummy_line(void);
 void nothing_frame (void);
+void nothing_frame_for_19_26 (void);
 /**
  * \brief The COG parameters of different EPD size
  */
@@ -219,6 +220,7 @@ void EPD_power_on (uint8_t EPD_type_index,int8_t temperature) {
 }
 
 
+
 /**
  * \brief Initialize COG Driver
  * \note For detailed flow and description, please refer to the COG G1 document Section 4.
@@ -285,6 +287,7 @@ uint8_t EPD_initialize_driver (void) {
 
 	return RES_OK;
 }
+
 
 
 
@@ -509,6 +512,9 @@ static void stage_handle_array_for_19_26(uint8_t *image_prt,long image_data_addr
 	stop_EPD_timer();
 }
 
+
+
+
 /**
  * \brief Write image data from memory array to the EPD
  * \note
@@ -571,9 +577,9 @@ void EPD_display_from_flash_prt (long previous_image_flash_address,
  * \note
  * - This function for 1.9" and 2.6"
  * - Just run the last stage (of 4 stages of global update) to update image immediately.
- * - If the new data byte is same as previous data byte, send ¡§Nothing¡¨ data byte which
- *   means the data byte on EPD won¡¦t be changed.
- * ¡V If the new data byte is different from the previous data byte, send the new data byte.
+ * - If the new data byte is same as previous data byte, send ï¿½ï¿½Nothingï¿½ï¿½ data byte which
+ *   means the data byte on EPD wonï¿½ï¿½t be changed.
+ * ï¿½V If the new data byte is different from the previous data byte, send the new data byte.
  * - For more details on the Partial Update driving method, please contact techsupport@pervasivedisplays.com *
  */
 static void stage_handle_partial_update_for_19_26(uint8_t *previous_image_ptr, uint8_t *new_image_ptr,
@@ -668,9 +674,9 @@ static void stage_handle_partial_update_for_19_26(uint8_t *previous_image_ptr, u
  * \note
  * - This function for 1.44", 2" and 2.7"
  * - Just run the last stage (of 4 stages of global update) to update image immediately.
- * - If the new data byte is same as previous data byte, send ¡§Nothing¡¨ data byte which
- *   means the data byte on EPD won¡¦t be changed.
- * ¡V If the new data byte is different from the previous data byte, send the new data byte.
+ * - If the new data byte is same as previous data byte, send ï¿½ï¿½Nothingï¿½ï¿½ data byte which
+ *   means the data byte on EPD wonï¿½ï¿½t be changed.
+ * ï¿½V If the new data byte is different from the previous data byte, send the new data byte.
  * - For more details on the Partial Update driving method, please contact techsupport@pervasivedisplays.com *
  */
 static void stage_handle_partial_update(uint8_t *previous_image_ptr, uint8_t *new_image_ptr,

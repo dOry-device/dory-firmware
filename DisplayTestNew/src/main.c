@@ -45,7 +45,7 @@
  */
 
 #include "conf_EPD.h"
-#include <stdio.h>
+//#include <stdio.h>
 #include <string.h>
 #if (defined EPD_KIT_TOOL_FUNCTIONS)
 #include "EPD_Kit_Tool_Process.h"
@@ -54,11 +54,20 @@
 #endif
 
 
+//uint8_t flipped_image_array_270_1[5808];
+//uint8_t flipped_image_array_270_2[5808];
+
 /** The main function will start toogling between two images on corresponding EPD
  *  depends on specified EPD size or working with EPD Kit Tool */
 int main(void) {
 	/* Initialize system clock and TI LaunchPad board */
 	system_init();
+
+	/*flip image bytes*/
+	flip_image_bytes((uint8_t *)&image_array_270_1,(uint8_t *)&image_array_270_1);
+//	flip_image_bytes((uint8_t *)&image_array_270_2,(uint8_t *)&image_array_270_2);
+
+
 	/* Initialize EPD hardware */
 	EPD_display_init();
 	__enable_interrupt();//enable interrupts
@@ -73,7 +82,7 @@ int main(void) {
 
 #else /* if showing two images alternatively ***************************************/
 	for(;;) {
-		puts("he");//TODO : remove debug
+		//puts("he");//TODO : remove debug
 
 		/* User selects which EPD size to run demonstration by changing the
 		 * USE_EPD_Type in conf_EPD.h
@@ -88,7 +97,7 @@ int main(void) {
 #ifdef G2_Aurora_Ma
 		EPD_display_from_pointer(EPD_270,(uint8_t *)&image_array_270_1,(uint8_t *)&image_array_270_1);
 #else
-		EPD_display_from_pointer(EPD_270,(uint8_t *)&image_array_270_2,(uint8_t *)&image_array_270_1);
+		EPD_display_from_pointer(EPD_270,image_array_270_1,image_array_270_1);
 #endif
 #elif(USE_EPD_Type==EPD_190)
         EPD_display_from_pointer(EPD_190,(uint8_t *)&image_array_190_2,(uint8_t *)&image_array_190_1);
@@ -111,7 +120,7 @@ int main(void) {
 #ifdef G2_Aurora_Ma
 		EPD_display_from_pointer(EPD_270,(uint8_t *)&image_array_270_1,(uint8_t *)&image_array_270_1);
 #else
-		EPD_display_from_pointer(EPD_270,(uint8_t *)&image_array_270_1,(uint8_t *)&image_array_270_2);
+	//	EPD_display_from_pointer(EPD_270,flipped_image_array_270_2,flipped_image_array_270_1);
 #endif
 #elif(USE_EPD_Type==EPD_190)
         EPD_display_from_pointer(EPD_190,(uint8_t *)&image_array_190_1,(uint8_t *)&image_array_190_2);

@@ -33,6 +33,8 @@
 
 #include <conf_EPD.h>
 #include "EPD_Kit_Tool_Process.h"
+#include <stdio.h>
+
 
 slideshow_information_t slideshow_parameter;
 long write_flash_address;
@@ -75,8 +77,8 @@ static uint8_t slideshow_run(void) {
 #elif(defined __MSP430G2553__)
 	IE2 &= ~UCA0RXIE; //Disable USCI_A0 RX interrup
 #endif
-	image_info.EPD_size=slideshow_parameter.EPD_size;
-	image_info.image_index=slideshow_index;
+	image_info.EPD_size=EPD_270;//slideshow_parameter.EPD_size;
+	image_info.image_index=0;//slideshow_index;
 	/** Read new image */
 	image_info.extend_address.slideshow_image_address=
 	    get_slideshow_image_address(image_info.EPD_size,image_info.image_index,FALSE);
@@ -295,6 +297,34 @@ static void uart_command_handle(system_packets_t * packet) {
 	}
 }
 
+void dory_Text_demo()
+{
+	ASCII_info_t tmp_ASCII_info;
+	system_packets_t * packet;
+	const char *str1 = "Hello World";
+
+
+	//Load ASCII:
+	memcpy ((uint8_t *)&tmp_ASCII_info, (uint8_t *)str1, sizeof(ASCII_info_t));
+	write_ascii(image_info,tmp_ASCII_info.x,tmp_ASCII_info.y,(char *)&tmp_ASCII_info.str);
+
+	//Show ASCII:
+	#if !(defined G2_Aurora_Ma)
+        //EPD_display_from_flash(image_info.EPD_size,image_info.previous_image_address,image_info.new_image_address,read_flash_handle);
+        EPD_display_partialupdate_from_flash_prt(image_info.previous_image_address,image_info.new_image_address,
+        read_flash_handle);
+        EPD_power_off();
+		//EPD_display_partialupdate_from_flash_prt(image_info.previous_image_address,image_info.new_image_address,
+		//                          image_info.extend_address.mark_image_address,read_flash_handle);
+
+		image_info.previous_image_address=image_info.new_image_address;
+		image_info.extend_address.last_address=_NULL_address;
+	#endif
+
+}
+
+
+
 /**
  * \brief Initialize the UART data buffer, check extension board is connected and
  *        and check slideshow is enabled
@@ -304,13 +334,18 @@ void EPD_Kit_Tool_process_init(void) {
 	/** Initialize the UART data buffer and start receiving system packets */
 	data_controller_init(uart_command_handle);
 	delay_ms(1000);
-   check_EPD_extension_board();
+    check_EPD_extension_board();
 	image_info.previous_image_address=_NULL_address;
 	image_info.extend_address.last_address=_NULL_address;
 	if(board_is_connected==1) {
 		/** Check if slideshow is enabled */
 		read_slideshow_parameters(&slideshow_parameter);
-		if(slideshow_parameter.EPD_size>EPD_260) return;
+		if(slideshow_parameter.EPD_size>EPD_260)
+		{
+			puts("return");//TODO : remove debug
+			return;
+		}
+
 		if(slideshow_parameter.interval>0) {
 			LED_Trigger();
 			if(slideshow_run()) {
@@ -326,14 +361,17 @@ void EPD_Kit_Tool_process_init(void) {
  */
 void EPD_Kit_tool_process_task(void) {
 
+	start_EPD_timer();
 	poll_system_packet_buffer();
+
 	/** Run slideshow if interval has value and not zero */
-	if(slideshow_parameter.interval>0 && slideshow_parameter.interval!=0xff) {
-		if(get_current_time_tick()>=(slideshow_parameter.interval*1000)) {
-			if(slideshow_run()) {
+	//if(slideshow_parameter.interval>0 && slideshow_parameter.interval!=0xff) {
+		if(get_current_time_tick()>=(10000)) {
+			//if(slideshow_run()) {
+			dory_Text_demo();
 				start_EPD_timer();
 				LED_Trigger();
-			}
+			//}
 		}
-	}
+	//}
 }
